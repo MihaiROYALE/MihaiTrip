@@ -1,0 +1,183 @@
+.title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.info p {
+    font-size: 20px;
+}
+
+.info {
+    text-align: center;
+    font-size: 17px;
+}
+
+.members h2 {
+    font-size: 30px;
+    background-color: black;
+    color: beige;
+    box-shadow: 4px 7px 15px black;
+}
+
+.members {
+    text-align: center;
+}
+
+.members table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+}
+
+a:link {
+    color: blue;
+  }
+  
+  a:visited {
+    color: blue;
+  }
+  
+  a:hover {
+    color: purple;
+  }
+  
+  a:active {
+    color: red;
+  }
+  
+  a:link, a:visited {
+    text-decoration: none;
+  }
+
+.Total table {
+    margin-left: 25%;
+    width: 15.7%;
+    text-align: center;
+}
+
+.drivers h2 {
+    font-size: 30px;
+    background-color: black;
+    color: beige;
+    box-shadow: 4px 7px 15px black;
+}
+
+.drivers {
+    text-align: center;
+}
+
+.drivers table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.Assistance h2 {
+    font-size: 30px;
+    background-color: black;
+    color: beige;
+    box-shadow: 4px 7px 15px black;
+}
+
+.Assistance {
+    text-align: center;
+    font-size: 100%;
+}
+
+.assistance {
+    text-align: center;
+}
+
+.ass3 {
+    margin-left: 25%;
+}
+
+.inf {
+    margin-left: 28%;
+}
+
+.best {
+    text-align: center;
+    font-size: 100%;
+}
+
+.Guidelines h2 {
+    font-size: 30px;
+    background-color: black;
+    color: beige;
+    box-shadow: 4px 7px 15px black;
+}
+
+.Guidelines {
+    text-align: center;
+}
+
+.guid {
+    text-align: center;
+    font-size: 135%;
+}
+
+.vehicules h2 {
+    font-size: 30px;
+    background-color: black;
+    color: beige;
+    box-shadow: 4px 7px 15px black;
+}
+
+.vehicules {
+    text-align: center;
+}
+
+.cars h4 {
+    font-size: 120%;
+    text-align: center;
+}
+
+.cars {
+    text-align: center;
+    font-size: 111%;
+}
+
+.Others h2 {
+    font-size: 3Opx;
+    background-color: black;
+    color: beige;
+    box-shadow: 4px 7px 15px black;
+}
+
+.Others {
+    text-align: center;
+}
+
+
+.oth {
+    text-align: center;
+    font-size: 135%;
+}
+
+.extras h2 {
+    font-size: 30px;
+    background-color: black;
+    color: beige;
+    box-shadow: 4px 7px 15px black;
+}
+
+.extras {
+    text-align: center;
+}
+
+.ext {
+    text-align: center;
+    font-size: 135%;
+}
+
+.bon {
+    text-align: center;
+    font-size: 135%;
+}
+
+.Bonuses {
+    text-align: center;
+}
