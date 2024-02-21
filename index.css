@@ -25,18 +25,17 @@ a:link {
     text-decoration: none;
   }
 
-.title-bg {
+  .title-bg {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
     position: relative;
     overflow: hidden;
     min-height: 100vh;
-
 }
 
-.tbg {
+.t-bg {
     position: absolute;
     z-index: -1;
     top: 50%;
@@ -46,9 +45,9 @@ a:link {
     min-height: 100%;
 }
 
-.title {
+.title-mrt {
     color: burlywood;
-    font-size: 39px;
+    font-size: 3vw;
     text-align: center;
     text-shadow: 0 0 5px burlywood;
 }
@@ -59,25 +58,25 @@ hr {
     margin-bottom: 0.5em;
     margin-left: auto;
     margin-right: auto;
-    width: 150vh;
-    height: 4px;
+    width: 90vh;
+    height: 0.5vw;
     background-color: rgba(222, 184, 135, 0.597);
     border: none;
     box-shadow: 0 0 5px burlywood;
 }
 
-.tinfo p {
+.title-i p {
     color: bisque;
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
     top: 50%;
     left: 50%;
 }
 
-.mju {
+.members-mju {
     text-align: center;
     align-items: center;
-    font-size: 3vw;
+    font-size: 30px;
     background-color: bisque;
     color: rgb(0, 0, 0);
     box-shadow: 4px 7px 15px bisque;
@@ -87,14 +86,14 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
     padding: 200px 0;
     position: relative;
     overflow: hidden;
     min-height: 100vh;
 }
 
-.mbg {
+.m-bg {
     position: absolute;
     z-index: -1;
     top: 50%;
@@ -104,11 +103,12 @@ hr {
     min-height: 100%;
 }
 
-.members {
+.members-i {
     text-align: center;
+    padding: 200px 0;
 }
 
-.members table {
+.members-i table {
     background-color: rgba(0, 0, 0, 0.412);
     text-decoration: none;
     margin-left: auto;
@@ -116,9 +116,10 @@ hr {
     text-align: center;
     width: 80vh;
     height: 30vh;
+    border-collapse: collapse;
 }
 
-.Total table {
+.members-t table {
     background-color: rgba(0, 0, 0, 0.412);
     text-decoration: none;
     margin-left: auto;
@@ -126,137 +127,872 @@ hr {
     text-align: center;
     width: 80vh;
     height: 5vh;
+    border-collapse: collapse;
 }
 
-.drivers h2 {
-    font-size: 30px;
-    background-color: black;
-    color: beige;
-    box-shadow: 4px 7px 15px black;
-}
-
-.drivers {
+.drivers-dnp {
     text-align: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    box-shadow: 4px 7px 15px bisque;
 }
 
-.drivers table {
+.drivers-bg {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    padding: 200px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.d-bg {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.drivers-i {
+    text-align: center;
+    padding: 200px 0;
+}
+
+.drivers-i table {
+    background-color: rgba(0, 0, 0, 0.412);
+    text-decoration: none;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 50%;
+    width: 80vh;
+    height: 30vh;
+    border-collapse: collapse;
+    align-items: center;
 }
 
-.Assistance h2 {
+.assistance-anfm {
+    text-align: center;
+    align-items: center;
     font-size: 30px;
-    background-color: black;
-    color: beige;
-    box-shadow: 4px 7px 15px black;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    box-shadow: 4px 7px 15px bisque;
 }
 
-.Assistance {
+.assistance-bg {
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 100%;
+    background: rgba(0,0,0,0.5);
+    padding: 200px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
 }
 
-.assistance {
+.a-bg {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.assistance-s {
     text-align: center;
+    color: bisque;
+    text-align: center;
+    padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 28px;
 }
 
-.ass3 {
+.assistance-t {
     margin-left: 25%;
+    color: bisque;
+    text-align: center;
+    padding: 15px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 24px;
 }
 
-.inf {
+.assistance-i {
     margin-left: 28%;
-}
-
-.best {
+    color: beige;
     text-align: center;
-    font-size: 100%;
+    padding: 5px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 19px;
 }
 
-.Guidelines h2 {
+.assistance-e {
+    text-align: center;
+    font-size: 28px;
+    color: bisque;
+    text-align: center;
+    padding: 35px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.guidelines-g {
+    text-align: center;
+    align-items: center;
     font-size: 30px;
-    background-color: black;
-    color: beige;
-    box-shadow: 4px 7px 15px black;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    box-shadow: 4px 7px 15px bisque;
 }
 
-.Guidelines {
+.guidelines-bg {
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    background: rgba(0,0,0,0.5);
+    padding: 200px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
 }
 
-.guid {
+.g-bg {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.guidelines-i {
     text-align: center;
-    font-size: 135%;
-}
-
-.vehicules h2 {
+    color: bisque;
+    text-align: center;
+    padding: 200px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
     font-size: 30px;
-    background-color: black;
-    color: beige;
-    box-shadow: 4px 7px 15px black;
 }
 
-.vehicules {
+.vehicules-rtv {
     text-align: center;
-}
-
-.cars h4 {
-    font-size: 120%;
-    text-align: center;
-}
-
-.cars {
-    text-align: center;
-    font-size: 111%;
-}
-
-.Others h2 {
-    font-size: 3Opx;
-    background-color: black;
-    color: beige;
-    box-shadow: 4px 7px 15px black;
-}
-
-.Others {
-    text-align: center;
-}
-
-
-.oth {
-    text-align: center;
-    font-size: 135%;
-}
-
-.extras h2 {
+    align-items: center;
     font-size: 30px;
-    background-color: black;
-    color: beige;
-    box-shadow: 4px 7px 15px black;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    box-shadow: 4px 7px 15px bisque;
 }
 
-.extras {
+.vehicules-bg {
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    background: rgba(0,0,0,0.5);
+    padding: 200px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
 }
 
-.ext {
+.v-bg {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.vehicules-i h4 {
     text-align: center;
-    font-size: 135%;
-}
-
-.bon {
+    color: bisque;
     text-align: center;
-    font-size: 135%;
-}
-
-.Bonuses h2 {
+    padding: 5px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
     font-size: 30px;
-    background-color: black;
-    color: beige;
-    box-shadow: 4px 7px 15px black;
 }
 
-.Bonuses {
+.vehicules-i h5 {
     text-align: center;
+    color: bisque;
+    text-align: center;
+    padding: 16px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.others-o {
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    box-shadow: 4px 7px 15px bisque;
+}
+
+.others-bg {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    padding: 200px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.o-bg {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.others-i {
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+.others-i h5  {
+    text-align: center;
+    color: bisque;
+    text-align: center;
+    padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 26px;
+}
+
+.extras-e {
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    box-shadow: 4px 7px 15px bisque;
+}
+
+.extras-bg {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    padding: 200px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.e-bg {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.extras-i {
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+.extras-i p {
+    text-align: center;
+    color: bisque;
+    text-align: center;
+    padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 40px;
+}
+
+.bonuses-b {
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    box-shadow: 4px 7px 15px bisque;
+}
+
+.bonuses-bg {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    padding: 200px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.b-bg {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.bonuses-i {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.bonuses-i h4 {
+    text-align: center;
+    color: bisque;
+    text-align: center;
+    padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 48px;
+}
+
+.bonuses-i p {
+    text-align: center;
+    color: bisque;
+    text-align: center;
+    padding: 9px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 25px;
+}
+
+
+@media screen and (max-width: 600px)
+{
+
+    .title-bg {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(0,0,0,0.4);
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+    }
+    
+    .t-bg {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .title-mrt {
+        color: burlywood;
+        font-size: 20px;
+        text-align: center;
+        text-shadow: 0 0 5px burlywood;
+    }
+    
+    hr {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 42vh;
+        height: 0.5vw;
+        background-color: rgba(222, 184, 135, 0.597);
+        border: none;
+        box-shadow: 0 0 5px burlywood;
+    }
+    
+    .title-i p {
+        text-align: center;
+        color: bisque;
+        text-align: center;
+        padding: 80px 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-collapse: collapse;
+        font-size: 12px;
+    }
+    
+    .members-mju {
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+        background-color: bisque;
+        color: rgb(0, 0, 0);
+        box-shadow: 4px 7px 15px bisque;
+    }
+    
+    .members-bg {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(0,0,0,0.5);
+        padding: 200px 0;
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+    }
+    
+    .m-bg {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .members-i {
+        text-align: center;
+        padding: 150px 0;
+    }
+    
+    .members-i table {
+        background-color: rgba(0, 0, 0, 0.412);
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 350px;
+        height: 250px;
+        border-collapse: collapse;
+    }
+    
+    .members-t table {
+        background-color: rgba(0, 0, 0, 0.412);
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 350px;
+        height: 33px;
+        border-collapse: collapse;
+    }
+    
+    .drivers-dnp {
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+        background-color: bisque;
+        color: rgb(0, 0, 0);
+        box-shadow: 4px 7px 15px bisque;
+    }
+    
+    .drivers-bg {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(0,0,0,0.5);
+        padding: 200px 0;
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+    }
+    
+    .d-bg {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .drivers-i {
+        text-align: center;
+        padding: 200px 0;
+    }
+    
+    .drivers-i table {
+        background-color: rgba(0, 0, 0, 0.412);
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 350px;
+        height: 250px;
+        border-collapse: collapse;
+        align-items: center;
+    }
+    
+    .assistance-anfm {
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+        background-color: bisque;
+        color: rgb(0, 0, 0);
+        box-shadow: 4px 7px 15px bisque;
+    }
+    
+    .assistance-bg {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(0,0,0,0.6);
+        padding: 200px 0;
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+    }
+    
+    .a-bg {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .assistance-s {
+        text-align: center;
+        color: bisque;
+        text-align: center;
+        padding: 20px 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-collapse: collapse;
+        font-size: 20px;
+    }
+    
+    .assistance-t {
+        margin-left: 25%;
+        color: bisque;
+        text-align: center;
+        padding: 15px 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-collapse: collapse;
+        font-size: 19px;
+    }
+    
+    .assistance-i {
+        margin-left: 28%;
+        color: beige;
+        text-align: center;
+        padding: 5px 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-collapse: collapse;
+        font-size: 16px;
+    }
+    
+    .assistance-e {
+        text-align: center;
+        font-size: 20px;
+        color: bisque;
+        text-align: center;
+        padding: 35px 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    
+    .guidelines-g {
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+        background-color: bisque;
+        color: rgb(0, 0, 0);
+        box-shadow: 4px 7px 15px bisque;
+    }
+    
+    .guidelines-bg {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(0,0,0,0.5);
+        padding: 200px 0;
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+    }
+    
+    .g-bg {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .guidelines-i {
+        text-align: center;
+        color: bisque;
+        text-align: center;
+        padding: 200px 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-collapse: collapse;
+        font-size: 30px;
+    }
+    
+    .vehicules-rtv {
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+        background-color: bisque;
+        color: rgb(0, 0, 0);
+        box-shadow: 4px 7px 15px bisque;
+    }
+    
+    .vehicules-bg {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(0,0,0,0.5);
+        padding: 200px 0;
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+    }
+    
+    .v-bg {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .vehicules-i h4 {
+        text-align: center;
+        color: bisque;
+        text-align: center;
+        padding: 5px 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-collapse: collapse;
+        font-size: 30px;
+    }
+    
+    .vehicules-i h5 {
+        text-align: center;
+        color: bisque;
+        text-align: center;
+        padding: 16px 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-collapse: collapse;
+        font-size: 16px;
+    }
+    
+    .others-o {
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+        background-color: bisque;
+        color: rgb(0, 0, 0);
+        box-shadow: 4px 7px 15px bisque;
+    }
+    
+    .others-bg {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(0,0,0,0.5);
+        padding: 200px 0;
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+    }
+    
+    .o-bg {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .others-i {
+        text-align: center;
+        padding: 150px 0;
+    }
+    
+    
+    .others-i h5  {
+        text-align: center;
+        color: bisque;
+        text-align: center;
+        padding: 20px 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-collapse: collapse;
+        font-size: 18px;
+    }
+    
+    .extras-e {
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+        background-color: bisque;
+        color: rgb(0, 0, 0);
+        box-shadow: 4px 7px 15px bisque;
+    }
+    
+    .extras-bg {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(0,0,0,0.5);
+        padding: 200px 0;
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+    }
+    
+    .e-bg {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .extras-i {
+        text-align: center;
+        padding: 100px 0;
+    }
+    
+    
+    .extras-i p {
+        text-align: center;
+        color: bisque;
+        text-align: center;
+        padding: 20px 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-collapse: collapse;
+        font-size: 40px;
+    }
+    
+    .bonuses-b {
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+        background-color: bisque;
+        color: rgb(0, 0, 0);
+        box-shadow: 4px 7px 15px bisque;
+    }
+    
+    .bonuses-bg {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(0,0,0,0.5);
+        padding: 200px 0;
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+    }
+    
+    .b-bg {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .bonuses-i {
+        text-align: center;
+        padding: 100px 0;
+    }
+    
+    .bonuses-i h4 {
+        text-align: center;
+        color: bisque;
+        text-align: center;
+        padding: 20px 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-collapse: collapse;
+        font-size: 48px;
+    }
+    
+    .bonuses-i p {
+        text-align: center;
+        color: bisque;
+        text-align: center;
+        padding: 9px 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-collapse: collapse;
+        font-size: 25px;
+    }
+    
 }
