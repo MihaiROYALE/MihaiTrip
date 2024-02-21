@@ -795,51 +795,6 @@ hr {
         box-shadow: 4px 7px 15px bisque;
     }
     
-    .vehicules-bg {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgba(0,0,0,0.5);
-        padding: 200px 0;
-        position: relative;
-        overflow: hidden;
-        min-height: 100vh;
-    }
-    
-    .v-bg {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
-    }
-    
-    .vehicules-i h4 {
-        text-align: center;
-        color: bisque;
-        text-align: center;
-        padding: 5px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        font-size: 30px;
-    }
-    
-    .vehicules-i h5 {
-        text-align: center;
-        color: bisque;
-        text-align: center;
-        padding: 16px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        font-size: 16px;
-    }
-    
     .others-o {
         text-align: center;
         align-items: center;
@@ -847,27 +802,6 @@ hr {
         background-color: bisque;
         color: rgb(0, 0, 0);
         box-shadow: 4px 7px 15px bisque;
-    }
-    
-    .others-bg {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgba(0,0,0,0.5);
-        padding: 200px 0;
-        position: relative;
-        overflow: hidden;
-        min-height: 100vh;
-    }
-    
-    .o-bg {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
     }
     
     .others-i {
@@ -897,45 +831,6 @@ hr {
         box-shadow: 4px 7px 15px bisque;
     }
     
-    .extras-bg {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgba(0,0,0,0.5);
-        padding: 200px 0;
-        position: relative;
-        overflow: hidden;
-        min-height: 100vh;
-    }
-    
-    .e-bg {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
-    }
-    
-    .extras-i {
-        text-align: center;
-        padding: 100px 0;
-    }
-    
-    
-    .extras-i p {
-        text-align: center;
-        color: bisque;
-        text-align: center;
-        padding: 20px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        font-size: 40px;
-    }
-    
     .bonuses-b {
         text-align: center;
         align-items: center;
@@ -943,56 +838,6 @@ hr {
         background-color: bisque;
         color: rgb(0, 0, 0);
         box-shadow: 4px 7px 15px bisque;
-    }
-    
-    .bonuses-bg {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgba(0,0,0,0.5);
-        padding: 200px 0;
-        position: relative;
-        overflow: hidden;
-        min-height: 100vh;
-    }
-    
-    .b-bg {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
-    }
-    
-    .bonuses-i {
-        text-align: center;
-        padding: 100px 0;
-    }
-    
-    .bonuses-i h4 {
-        text-align: center;
-        color: bisque;
-        text-align: center;
-        padding: 20px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        font-size: 48px;
-    }
-    
-    .bonuses-i p {
-        text-align: center;
-        color: bisque;
-        text-align: center;
-        padding: 9px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        font-size: 25px;
     }
     
 }
