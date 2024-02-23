@@ -73,6 +73,41 @@ hr {
     left: 50%;
 }
 
+.map-m {
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    box-shadow: 4px 7px 15px bisque;
+}
+
+.map-bg {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    padding: 200px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.ma-bg {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.map-i {
+    text-align: center;
+    padding: 6px 0;
+}
+
 .members-mju {
     text-align: center;
     align-items: center;
@@ -560,6 +595,38 @@ hr {
         text-align: center;
         border-collapse: collapse;
         font-size: 12px;
+    }
+
+    .map-bg {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(0,0,0,0.5);
+        padding: 200px 0;
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+    }
+    
+    .ma-bg {
+        position: absolute;
+        background-color: burlywood;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .map-i {
+        text-align: center;
+        padding: 6px 0;
+    }
+
+    .map-i iframe {
+        height: 600px;
+        width: 340px;
     }
     
     .members-mju {
