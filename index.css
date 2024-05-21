@@ -29,7 +29,7 @@ a:link {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.5);
     position: relative;
     overflow: hidden;
     min-height: 100vh;
@@ -47,9 +47,10 @@ a:link {
 
 .title-mrt {
     color: burlywood;
-    font-size: 3vw;
+    font-size: 1.8vw;
     text-align: center;
     text-shadow: 0 0 5px burlywood;
+    letter-spacing: 0.3cm;
 }
 
 hr {
@@ -58,11 +59,10 @@ hr {
     margin-bottom: 0.5em;
     margin-left: auto;
     margin-right: auto;
-    width: 90vh;
-    height: 0.5vw;
+    width: 175vh;
+    height: 0.1vw;
     background-color: rgba(222, 184, 135, 0.597);
     border: none;
-    box-shadow: 0 0 5px burlywood;
 }
 
 .title-i p {
@@ -71,15 +71,16 @@ hr {
     text-align: center;
     top: 50%;
     left: 50%;
+    letter-spacing: 0.03cm;
 }
 
 .map-m {
     text-align: center;
     align-items: center;
-    font-size: 30px;
-    background-color: bisque;
+    font-size: 25px;
+    background-color: rgba(255, 228, 196, 0.8);
     color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px bisque;
+    box-shadow: 4px 7px 15px rgba(255, 227, 194, 1);
 }
 
 .map-bg {
@@ -87,7 +88,7 @@ hr {
     align-items: center;
     text-align: center;
     background: rgba(0,0,0,0.5);
-    padding: 200px 0;
+    padding: 100px 0;
     position: relative;
     overflow: hidden;
     min-height: 100vh;
@@ -105,16 +106,16 @@ hr {
 
 .map-i {
     text-align: center;
-    padding: 6px 0;
+    padding: 100px 0;
 }
 
 .members-mju {
     text-align: center;
     align-items: center;
-    font-size: 30px;
-    background-color: bisque;
+    font-size: 25px;
+    background-color: rgba(255, 228, 196, 0.8);
     color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px bisque;
+    box-shadow: 4px 7px 15px  rgba(255, 228, 196, 1);
 }
 
 .members-bg {
@@ -122,7 +123,7 @@ hr {
     align-items: center;
     text-align: center;
     background: rgba(0,0,0,0.5);
-    padding: 200px 0;
+    padding: 100px 0;
     position: relative;
     overflow: hidden;
     min-height: 100vh;
@@ -140,7 +141,7 @@ hr {
 
 .members-i {
     text-align: center;
-    padding: 200px 0;
+    padding: 100px 0;
 }
 
 .members-i table {
@@ -149,8 +150,8 @@ hr {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 80vh;
-    height: 30vh;
+    width: 77vh;
+    height: 60vh;
     border-collapse: collapse;
 }
 
@@ -160,18 +161,19 @@ hr {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 80vh;
-    height: 5vh;
+    width: 84vh;
+    height: 6vh;
     border-collapse: collapse;
+    padding: 100vh;
 }
 
 .drivers-dnp {
     text-align: center;
     align-items: center;
-    font-size: 30px;
-    background-color: bisque;
+    font-size: 25px;
+    background-color: rgba(255, 228, 196, 0.8);
     color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px bisque;
+    box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
 }
 
 .drivers-bg {
@@ -179,7 +181,7 @@ hr {
     align-items: center;
     text-align: center;
     background: rgba(0,0,0,0.5);
-    padding: 200px 0;
+    padding: 100px 0;
     position: relative;
     overflow: hidden;
     min-height: 100vh;
@@ -197,7 +199,7 @@ hr {
 
 .drivers-i {
     text-align: center;
-    padding: 200px 0;
+    padding: 100px 0;
 }
 
 .drivers-i table {
@@ -206,8 +208,8 @@ hr {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 80vh;
-    height: 30vh;
+    width: 77vh;
+    height: 60vh;
     border-collapse: collapse;
     align-items: center;
 }
@@ -215,18 +217,18 @@ hr {
 .assistance-anfm {
     text-align: center;
     align-items: center;
-    font-size: 30px;
-    background-color: bisque;
+    font-size: 25px;
+    background-color: rgba(255, 228, 196, 0.8);
     color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px bisque;
+    box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
 }
 
 .assistance-bg {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0,0,0,0.5);
-    padding: 200px 0;
+    background: rgba(0,0,0,0.7);
+    padding: 100px 0;
     position: relative;
     overflow: hidden;
     min-height: 100vh;
@@ -251,7 +253,8 @@ hr {
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    font-size: 28px;
+    font-size: 24px;
+    letter-spacing: 0.07cm;
 }
 
 .assistance-t {
@@ -264,6 +267,7 @@ hr {
     text-align: center;
     border-collapse: collapse;
     font-size: 24px;
+    letter-spacing: 0.07cm;
 }
 
 .assistance-i {
@@ -275,7 +279,7 @@ hr {
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    font-size: 19px;
+    font-size: 22px;
 }
 
 .assistance-e {
@@ -288,15 +292,16 @@ hr {
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
+    letter-spacing: 0.04cm;
 }
 
 .guidelines-g {
     text-align: center;
     align-items: center;
-    font-size: 30px;
-    background-color: bisque;
+    font-size: 25px;
+    background-color: rgba(255, 228, 196, 0.8);
     color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px bisque;
+    box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
 }
 
 .guidelines-bg {
@@ -304,7 +309,7 @@ hr {
     align-items: center;
     text-align: center;
     background: rgba(0,0,0,0.5);
-    padding: 200px 0;
+    padding: 100px 0;
     position: relative;
     overflow: hidden;
     min-height: 100vh;
@@ -324,29 +329,30 @@ hr {
     text-align: center;
     color: bisque;
     text-align: center;
-    padding: 200px 0;
+    padding: 100px 0;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
     font-size: 30px;
+    letter-spacing: 0.09cm;
 }
 
 .vehicules-rtv {
     text-align: center;
     align-items: center;
-    font-size: 30px;
-    background-color: bisque;
+    font-size: 25px;
+    background-color: rgba(255, 228, 196, 0.8);
     color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px bisque;
+    box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
 }
 
 .vehicules-bg {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0,0,0,0.5);
-    padding: 200px 0;
+    background: rgba(0,0,0,0.7);
+    padding: 100px 0;
     position: relative;
     overflow: hidden;
     min-height: 100vh;
@@ -371,7 +377,7 @@ hr {
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .vehicules-i h5 {
@@ -383,24 +389,24 @@ hr {
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    font-size: 16px;
+    font-size: 19px;
 }
 
 .others-o {
     text-align: center;
     align-items: center;
-    font-size: 30px;
-    background-color: bisque;
+    font-size: 25px;
+    background-color: rgba(255, 228, 196, 0.8);
     color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px bisque;
+    box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
 }
 
 .others-bg {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0,0,0,0.5);
-    padding: 200px 0;
+    background: rgba(0,0,0,0.7);
+    padding: 100px 0;
     position: relative;
     overflow: hidden;
     min-height: 100vh;
@@ -426,21 +432,22 @@ hr {
     text-align: center;
     color: bisque;
     text-align: center;
-    padding: 20px 0;
+    padding: 100px 0;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
     font-size: 26px;
+    letter-spacing: 0.07cm;
 }
 
 .extras-e {
     text-align: center;
     align-items: center;
-    font-size: 30px;
-    background-color: bisque;
+    font-size: 25px;
+    background-color: rgba(255, 228, 196, 0.8);
     color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px bisque;
+    box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
 }
 
 .extras-bg {
@@ -470,7 +477,7 @@ hr {
 }
 
 
-.extras-i p {
+.extras-i h4 {
     text-align: center;
     color: bisque;
     text-align: center;
@@ -480,15 +487,16 @@ hr {
     text-align: center;
     border-collapse: collapse;
     font-size: 40px;
+    letter-spacing: 0.09cm;
 }
 
 .bonuses-b {
     text-align: center;
     align-items: center;
-    font-size: 30px;
-    background-color: bisque;
+    font-size: 25px;
+    background-color: rgba(255, 228, 196, 0.8);
     color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px bisque;
+    box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
 }
 
 .bonuses-bg {
@@ -496,7 +504,7 @@ hr {
     align-items: center;
     text-align: center;
     background: rgba(0,0,0,0.5);
-    padding: 200px 0;
+    padding: 100px 0;
     position: relative;
     overflow: hidden;
     min-height: 100vh;
@@ -521,35 +529,62 @@ hr {
     text-align: center;
     color: bisque;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    font-size: 48px;
+    font-size: 50px;
 }
 
 .bonuses-i p {
     text-align: center;
     color: bisque;
     text-align: center;
-    padding: 9px 0;
+    padding: 10px 0;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    font-size: 25px;
+    font-size: 0.8cm
+
+}
+
+.map {
+    text-align: center;
+    color: bisque;
+    text-align: center;
+    padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
 }
 
 
-@media screen and (max-width: 600px)
-{
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* Modify font sizes and paddings for smaller screens */
     .title-bg {
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: rgba(0,0,0,0.4);
+        background: rgba(0,0,0,0.5);
         position: relative;
         overflow: hidden;
         min-height: 100vh;
@@ -567,9 +602,10 @@ hr {
     
     .title-mrt {
         color: burlywood;
-        font-size: 20px;
+        font-size: 88%;
         text-align: center;
         text-shadow: 0 0 5px burlywood;
+        letter-spacing: 0.2cm;
     }
     
     hr {
@@ -578,31 +614,36 @@ hr {
         margin-bottom: 0.5em;
         margin-left: auto;
         margin-right: auto;
-        width: 42vh;
-        height: 0.5vw;
+        width: 43vh;
+        height: 0.1vw;
         background-color: rgba(222, 184, 135, 0.597);
         border: none;
-        box-shadow: 0 0 5px burlywood;
     }
     
     .title-i p {
-        text-align: center;
         color: bisque;
+        font-size: 15px;
         text-align: center;
-        padding: 80px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        font-size: 12px;
+        top: 50%;
+        left: 50%;
+        letter-spacing: 0.03cm;
     }
-
+    
+    .map-m {
+        text-align: center;
+        align-items: center;
+        font-size: 15px;
+        background-color: rgba(255, 228, 196, 0.8);
+        color: rgb(0, 0, 0);
+        box-shadow: 4px 7px 15px rgba(255, 227, 194, 1);
+    }
+    
     .map-bg {
         justify-content: center;
         align-items: center;
         text-align: center;
         background: rgba(0,0,0,0.5);
-        padding: 200px 0;
+        padding: 100px 0;
         position: relative;
         overflow: hidden;
         min-height: 100vh;
@@ -610,7 +651,6 @@ hr {
     
     .ma-bg {
         position: absolute;
-        background-color: burlywood;
         z-index: -1;
         top: 50%;
         left: 50%;
@@ -621,21 +661,21 @@ hr {
     
     .map-i {
         text-align: center;
-        padding: 6px 0;
+        padding: 100px 0;
     }
 
     .map-i iframe {
-        height: 600px;
+        height: 640px;
         width: 340px;
     }
     
     .members-mju {
         text-align: center;
         align-items: center;
-        font-size: 20px;
-        background-color: bisque;
+        font-size: 15px;
+        background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px bisque;
+        box-shadow: 4px 7px 15px  rgba(255, 228, 196, 1);
     }
     
     .members-bg {
@@ -643,7 +683,7 @@ hr {
         align-items: center;
         text-align: center;
         background: rgba(0,0,0,0.5);
-        padding: 200px 0;
+        padding: 100px 0;
         position: relative;
         overflow: hidden;
         min-height: 100vh;
@@ -661,7 +701,7 @@ hr {
     
     .members-i {
         text-align: center;
-        padding: 150px 0;
+        padding: 100px 0;
     }
     
     .members-i table {
@@ -670,8 +710,8 @@ hr {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        width: 350px;
-        height: 250px;
+        width: 40vh;
+        height: 80vh;
         border-collapse: collapse;
     }
     
@@ -681,18 +721,19 @@ hr {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        width: 350px;
-        height: 33px;
+        width: 40vh;
+        height: 6vh;
         border-collapse: collapse;
+        padding: 100vh;
     }
     
     .drivers-dnp {
         text-align: center;
         align-items: center;
-        font-size: 20px;
-        background-color: bisque;
+        font-size: 15px;
+        background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px bisque;
+        box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
     }
     
     .drivers-bg {
@@ -700,7 +741,7 @@ hr {
         align-items: center;
         text-align: center;
         background: rgba(0,0,0,0.5);
-        padding: 200px 0;
+        padding: 100px 0;
         position: relative;
         overflow: hidden;
         min-height: 100vh;
@@ -718,7 +759,7 @@ hr {
     
     .drivers-i {
         text-align: center;
-        padding: 200px 0;
+        padding: 100px 0;
     }
     
     .drivers-i table {
@@ -727,8 +768,8 @@ hr {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        width: 350px;
-        height: 250px;
+        width: 40vh;
+        height: 80vh;
         border-collapse: collapse;
         align-items: center;
     }
@@ -736,18 +777,18 @@ hr {
     .assistance-anfm {
         text-align: center;
         align-items: center;
-        font-size: 20px;
-        background-color: bisque;
+        font-size: 15px;
+        background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px bisque;
+        box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
     }
     
     .assistance-bg {
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: rgba(0,0,0,0.6);
-        padding: 200px 0;
+        background: rgba(0,0,0,0.7);
+        padding: 100px 0;
         position: relative;
         overflow: hidden;
         min-height: 100vh;
@@ -772,7 +813,8 @@ hr {
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 20px;
+        font-size: 19px;
+        letter-spacing: 0.07cm;
     }
     
     .assistance-t {
@@ -784,7 +826,8 @@ hr {
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 19px;
+        font-size: 23px;
+        letter-spacing: 0.07cm;
     }
     
     .assistance-i {
@@ -801,7 +844,7 @@ hr {
     
     .assistance-e {
         text-align: center;
-        font-size: 20px;
+        font-size: 19px;
         color: bisque;
         text-align: center;
         padding: 35px 0;
@@ -809,15 +852,16 @@ hr {
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
+        letter-spacing: 0.04cm;
     }
     
     .guidelines-g {
         text-align: center;
         align-items: center;
-        font-size: 20px;
-        background-color: bisque;
+        font-size: 15px;
+        background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px bisque;
+        box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
     }
     
     .guidelines-bg {
@@ -825,7 +869,7 @@ hr {
         align-items: center;
         text-align: center;
         background: rgba(0,0,0,0.5);
-        padding: 200px 0;
+        padding: 100px 0;
         position: relative;
         overflow: hidden;
         min-height: 100vh;
@@ -845,29 +889,30 @@ hr {
         text-align: center;
         color: bisque;
         text-align: center;
-        padding: 200px 0;
+        padding: 100px 0;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
         font-size: 30px;
+        letter-spacing: 0.09cm;
     }
     
     .vehicules-rtv {
         text-align: center;
         align-items: center;
-        font-size: 20px;
-        background-color: bisque;
+        font-size: 15px;
+        background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px bisque;
+        box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
     }
     
     .vehicules-bg {
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: rgba(0,0,0,0.5);
-        padding: 200px 0;
+        background: rgba(0,0,0,0.7);
+        padding: 100px 0;
         position: relative;
         overflow: hidden;
         min-height: 100vh;
@@ -892,7 +937,7 @@ hr {
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 30px;
+        font-size: 35px;
     }
     
     .vehicules-i h5 {
@@ -904,24 +949,24 @@ hr {
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 16px;
+        font-size: 17px;
     }
     
     .others-o {
         text-align: center;
         align-items: center;
-        font-size: 20px;
-        background-color: bisque;
+        font-size: 15px;
+        background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px bisque;
+        box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
     }
     
     .others-bg {
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: rgba(0,0,0,0.5);
-        padding: 200px 0;
+        background: rgba(0,0,0,0.7);
+        padding: 100px 0;
         position: relative;
         overflow: hidden;
         min-height: 100vh;
@@ -939,7 +984,7 @@ hr {
     
     .others-i {
         text-align: center;
-        padding: 150px 0;
+        padding: 100px 0;
     }
     
     
@@ -947,21 +992,22 @@ hr {
         text-align: center;
         color: bisque;
         text-align: center;
-        padding: 20px 0;
+        padding: 100px 0;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 18px;
+        font-size: 20px;
+        letter-spacing: 0.07cm;
     }
     
     .extras-e {
         text-align: center;
         align-items: center;
-        font-size: 20px;
-        background-color: bisque;
+        font-size: 15px;
+        background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px bisque;
+        box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
     }
     
     .extras-bg {
@@ -991,7 +1037,7 @@ hr {
     }
     
     
-    .extras-i p {
+    .extras-i h4 {
         text-align: center;
         color: bisque;
         text-align: center;
@@ -1000,16 +1046,17 @@ hr {
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 40px;
+        font-size: 26px;
+        letter-spacing: 0.15cm;
     }
     
     .bonuses-b {
         text-align: center;
         align-items: center;
-        font-size: 20px;
-        background-color: bisque;
+        font-size: 15px;
+        background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px bisque;
+        box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
     }
     
     .bonuses-bg {
@@ -1017,7 +1064,7 @@ hr {
         align-items: center;
         text-align: center;
         background: rgba(0,0,0,0.5);
-        padding: 200px 0;
+        padding: 100px 0;
         position: relative;
         overflow: hidden;
         min-height: 100vh;
@@ -1042,24 +1089,27 @@ hr {
         text-align: center;
         color: bisque;
         text-align: center;
-        padding: 20px 0;
+        padding: 10px 0;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 48px;
+        font-size: 40px;
+        letter-spacing: 6px;
     }
     
     .bonuses-i p {
         text-align: center;
         color: bisque;
         text-align: center;
-        padding: 9px 0;
+        padding: 10px 0;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
         font-size: 25px;
+        letter-spacing: 3px;
+    
     }
     
 }
