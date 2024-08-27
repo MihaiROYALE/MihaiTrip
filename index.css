@@ -539,7 +539,7 @@ hr {
 
 .bonuses-i p {
     text-align: center;
-    color: bisque;
+    color: #ffe4c4;
     text-align: center;
     padding: 10px 0;
     margin-left: auto;
@@ -548,6 +548,14 @@ hr {
     border-collapse: collapse;
     font-size: 0.8cm
 
+}
+
+.icons {
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    background-image: linear-gradient(to right, burlywood, black);
+    box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
 }
 
 .map {
