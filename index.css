@@ -29,7 +29,7 @@ a:link {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.8);
     position: relative;
     overflow: hidden;
     min-height: 100vh;
@@ -47,9 +47,8 @@ a:link {
 
 .title-mrt {
     color: burlywood;
-    font-size: 1.8vw;
+    font-size: 1.4vw;
     text-align: center;
-    text-shadow: 0 0 5px burlywood;
     letter-spacing: 0.3cm;
 }
 
@@ -57,17 +56,17 @@ hr {
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 175vh;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    width: auto;
     height: 0.1vw;
-    background-color: rgba(222, 184, 135, 0.597);
+    background-color: rgb(255, 255, 255);
     border: none;
 }
 
 .title-i p {
     color: bisque;
-    font-size: 19px;
+    font-size: 13px;
     text-align: center;
     top: 50%;
     left: 50%;
@@ -87,7 +86,7 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.8);
     padding: 100px 0;
     position: relative;
     overflow: hidden;
@@ -122,7 +121,7 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.8);
     padding: 100px 0;
     position: relative;
     overflow: hidden;
@@ -150,8 +149,8 @@ hr {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 77vh;
-    height: 60vh;
+    width: 75vh;
+    height: 55vh;
     border-collapse: collapse;
 }
 
@@ -161,8 +160,8 @@ hr {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 84vh;
-    height: 6vh;
+    width: 75vh;
+    height: 5vh;
     border-collapse: collapse;
     padding: 100vh;
 }
@@ -180,7 +179,7 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.8);
     padding: 100px 0;
     position: relative;
     overflow: hidden;
@@ -208,8 +207,8 @@ hr {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 77vh;
-    height: 60vh;
+    width: 75vh;
+    height: 55vh;
     border-collapse: collapse;
     align-items: center;
 }
@@ -227,7 +226,7 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.8);
     padding: 100px 0;
     position: relative;
     overflow: hidden;
@@ -253,7 +252,7 @@ hr {
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    font-size: 24px;
+    font-size: 18px;
     letter-spacing: 0.07cm;
 }
 
@@ -266,7 +265,7 @@ hr {
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    font-size: 24px;
+    font-size: 17px;
     letter-spacing: 0.07cm;
 }
 
@@ -279,12 +278,12 @@ hr {
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    font-size: 22px;
+    font-size: 15px;
 }
 
 .assistance-e {
     text-align: center;
-    font-size: 28px;
+    font-size: 18px;
     color: bisque;
     text-align: center;
     padding: 35px 0;
@@ -308,7 +307,7 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.8);
     padding: 100px 0;
     position: relative;
     overflow: hidden;
@@ -334,7 +333,7 @@ hr {
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    font-size: 30px;
+    font-size: 18px;
     letter-spacing: 0.09cm;
 }
 
@@ -377,7 +376,7 @@ hr {
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .vehicules-i h5 {
@@ -389,7 +388,7 @@ hr {
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    font-size: 19px;
+    font-size: 13px;
 }
 
 .others-o {
@@ -437,7 +436,7 @@ hr {
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    font-size: 26px;
+    font-size: 16px;
     letter-spacing: 0.07cm;
 }
 
@@ -454,7 +453,7 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.8);
     padding: 200px 0;
     position: relative;
     overflow: hidden;
@@ -486,7 +485,7 @@ hr {
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    font-size: 40px;
+    font-size: 18px;
     letter-spacing: 0.09cm;
 }
 
@@ -503,7 +502,7 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.8);
     padding: 100px 0;
     position: relative;
     overflow: hidden;
@@ -534,7 +533,7 @@ hr {
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    font-size: 50px;
+    font-size: 25px;
 }
 
 .bonuses-i p {
@@ -546,7 +545,7 @@ hr {
     margin-right: auto;
     text-align: center;
     border-collapse: collapse;
-    font-size: 0.8cm
+    font-size: 18px
 
 }
 
