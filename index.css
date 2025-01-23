@@ -552,7 +552,8 @@ hr {
 .icons {
     text-align: center;
     align-items: center;
-    font-size: 40px;
+    letter-spacing: 4cm;
+    font-size: 28px;
     background-image: linear-gradient(to right, burlywood, black);
     box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
 }
@@ -587,11 +588,12 @@ hr {
 
 @media only screen and (max-width: 768px) {
     /* Modify font sizes and paddings for smaller screens */
-    .title-bg {
+    
+      .title-bg {
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.8);
         position: relative;
         overflow: hidden;
         min-height: 100vh;
@@ -609,9 +611,8 @@ hr {
     
     .title-mrt {
         color: burlywood;
-        font-size: 88%;
+        font-size: 1vh;
         text-align: center;
-        text-shadow: 0 0 5px burlywood;
         letter-spacing: 0.2cm;
     }
     
@@ -619,17 +620,17 @@ hr {
         display: block;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
-        margin-left: auto;
-        margin-right: auto;
-        width: 43vh;
+        margin-left: 1cm;
+        margin-right: 1cm;
+        width: auto;
         height: 0.1vw;
-        background-color: rgba(222, 184, 135, 0.597);
+        background-color: rgb(255, 255, 255);
         border: none;
     }
     
     .title-i p {
         color: bisque;
-        font-size: 15px;
+        font-size: 10px;
         text-align: center;
         top: 50%;
         left: 50%;
@@ -639,7 +640,7 @@ hr {
     .map-m {
         text-align: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 18px;
         background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
         box-shadow: 4px 7px 15px rgba(255, 227, 194, 1);
@@ -649,7 +650,7 @@ hr {
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.8);
         padding: 100px 0;
         position: relative;
         overflow: hidden;
@@ -666,11 +667,6 @@ hr {
         min-height: 100%;
     }
     
-    .map-i {
-        text-align: center;
-        padding: 100px 0;
-    }
-
     .map-i iframe {
         height: 640px;
         width: 340px;
@@ -679,7 +675,7 @@ hr {
     .members-mju {
         text-align: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 18px;
         background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
         box-shadow: 4px 7px 15px  rgba(255, 228, 196, 1);
@@ -689,7 +685,7 @@ hr {
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.8);
         padding: 100px 0;
         position: relative;
         overflow: hidden;
@@ -718,7 +714,7 @@ hr {
         margin-right: auto;
         text-align: center;
         width: 40vh;
-        height: 80vh;
+        height: 55vh;
         border-collapse: collapse;
     }
     
@@ -729,7 +725,7 @@ hr {
         margin-right: auto;
         text-align: center;
         width: 40vh;
-        height: 6vh;
+        height: 5vh;
         border-collapse: collapse;
         padding: 100vh;
     }
@@ -737,7 +733,7 @@ hr {
     .drivers-dnp {
         text-align: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 18px;
         background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
         box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
@@ -747,7 +743,7 @@ hr {
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.8);
         padding: 100px 0;
         position: relative;
         overflow: hidden;
@@ -776,7 +772,7 @@ hr {
         margin-right: auto;
         text-align: center;
         width: 40vh;
-        height: 80vh;
+        height: 55vh;
         border-collapse: collapse;
         align-items: center;
     }
@@ -784,7 +780,7 @@ hr {
     .assistance-anfm {
         text-align: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 18px;
         background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
         box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
@@ -794,7 +790,7 @@ hr {
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: rgba(0,0,0,0.7);
+        background: rgba(0,0,0,0.8);
         padding: 100px 0;
         position: relative;
         overflow: hidden;
@@ -820,7 +816,7 @@ hr {
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 19px;
+        font-size: 18px;
         letter-spacing: 0.07cm;
     }
     
@@ -833,7 +829,7 @@ hr {
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 23px;
+        font-size: 17px;
         letter-spacing: 0.07cm;
     }
     
@@ -846,12 +842,12 @@ hr {
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 16px;
+        font-size: 15px;
     }
     
     .assistance-e {
         text-align: center;
-        font-size: 19px;
+        font-size: 18px;
         color: bisque;
         text-align: center;
         padding: 35px 0;
@@ -865,7 +861,7 @@ hr {
     .guidelines-g {
         text-align: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 18px;
         background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
         box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
@@ -875,7 +871,7 @@ hr {
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.8);
         padding: 100px 0;
         position: relative;
         overflow: hidden;
@@ -901,14 +897,14 @@ hr {
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 30px;
+        font-size: 18px;
         letter-spacing: 0.09cm;
     }
     
     .vehicules-rtv {
         text-align: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 18px;
         background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
         box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
@@ -944,7 +940,7 @@ hr {
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 35px;
+        font-size: 25px;
     }
     
     .vehicules-i h5 {
@@ -956,13 +952,13 @@ hr {
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 17px;
+        font-size: 13px;
     }
     
     .others-o {
         text-align: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 18px;
         background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
         box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
@@ -1004,14 +1000,14 @@ hr {
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 20px;
+        font-size: 16px;
         letter-spacing: 0.07cm;
     }
     
     .extras-e {
         text-align: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 18px;
         background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
         box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
@@ -1021,7 +1017,7 @@ hr {
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.8);
         padding: 200px 0;
         position: relative;
         overflow: hidden;
@@ -1053,14 +1049,14 @@ hr {
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 26px;
-        letter-spacing: 0.15cm;
+        font-size: 18px;
+        letter-spacing: 0.09cm;
     }
     
     .bonuses-b {
         text-align: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 18px;
         background-color: rgba(255, 228, 196, 0.8);
         color: rgb(0, 0, 0);
         box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
@@ -1070,7 +1066,7 @@ hr {
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.8);
         padding: 100px 0;
         position: relative;
         overflow: hidden;
@@ -1101,22 +1097,39 @@ hr {
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 40px;
-        letter-spacing: 6px;
+        font-size: 25px;
     }
     
     .bonuses-i p {
         text-align: center;
-        color: bisque;
+        color: #ffe4c4;
         text-align: center;
         padding: 10px 0;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         border-collapse: collapse;
-        font-size: 25px;
-        letter-spacing: 3px;
+        font-size: 18px
     
     }
     
+    .icons {
+        text-align: center;
+        align-items: center;
+        letter-spacing: 1.5cm;
+        font-size: 25px;
+        background-image: linear-gradient(to right, burlywood, black);
+        box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+    }
+    
+    .map {
+        text-align: center;
+        color: bisque;
+        text-align: center;
+        padding: 20px 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-collapse: collapse;
+    }
 }
