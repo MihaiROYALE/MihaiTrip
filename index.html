@@ -1,638 +1,342 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="Width=device-width, inital-scale=1.0">
-        <title>Mihai's Road Trip</title>
-        <link rel="stylesheet" href=index.css>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihai's Grand Tour</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body id="home">
 
-    <body style="background-color: black;">
-        
-            <div class="title-bg" style="color: #fff;">
+    <!-- Header with Navigation -->
+    <header class="site-header">
+        <nav class="main-navigation">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#drivers-passengers">Drivers</a></li>
+                <li><a href="#crew">Assistance</a></li>
+                <li><a href="#rules">Guidelines</a></li>
+                <li><a href="#vehicles">Vehicles</a></li>
+                <li><a href="#equipment">Equipment</a></li>
+                <li><a href="#bonuses">Bonuses</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                <video autoplay loop muted plays-inline class="t-bg">
-                    <source src="Rolls Royce BGV.MP4" type="video/mp4">
-                </video>
-
-                    <div class="title-mrt" style="color: bisque;" data-aos="fade" data-aos-duration="3000">
-                        <br>
-                            <h1>Mihai's Grand Tour</h1>
-                    </div> 
-                        <br> 
-                            <hr data-aos="fade" data-aos-duration="3000" style="translate: none;rotate: none;scale: none;transform: translate(0px, 0px);opacity: 0.5;">
-                        <br>
-                                <div class="title-i" data-aos="fade" data-aos-duration="3000">
-                                    <p><b><br>Mihai’s Grand Road Trip<br></b>
-                                        <br>
-                                        <br>
-                                        What, you may ask, does this <b><i>“Road Trip”</i></b> truly mean ? Is it simply a journey from point A to point B ? Hardly.<br>
-                                        <br>
-                                        This adventure was born of a deep and abiding passion of mine<br>
-                                        <br>
-                                        travelling, exploring, and expanding my knowledge beyond what I already know.But most of all, it stems from my greatest love.<br>
-                                        <br>
-                                        Cars and the pure joy of driving.<br>
-                                        <br>
-                                        This is why I’ve dreamed up this road trip in the first place, to drive through countless countries in my favourite car, with my closest friends,<br>
-                                        <br>
-                                        creating unforgettable memories and experiences that can’t be replicated.<br>
-                                        <br>
-                                        The plan ? To chart a course across the vast, beautiful canvas of continental Europe.<br>
-                                        <br>
-                                        A land brimming with breathtaking architecture, rich history, vibrant culture, mouth watering cuisines,and countless surprises awaiting discovery.<br>
-                                        <br>
-                                        Yet, it’s more than just a road trip about my passions for cars, travel, and learning.<br>
-                                        <br>
-                                        It’s about something deeper. Cherished moments with my favourite people.<br>
-                                        <br>
-                                        It’s about being together in places we’ve never seen before,<br>
-                                        <br>
-                                        laughing until our sides hurt,<br>
-                                        <br>
-                                        raising a glass <i>(or a bottle)</i> in celebration,<br>
-                                        <br>
-                                        and concocting brilliant, sometimes reckless, plans as we wind along Europe’s scenic roads.<br>
-                                        <br>
-                                        Call it childish if you like, but truly, what better way is there to live ?<br>
-                                        <br>
-                                        This isn’t just a road trip. It’s a chance to seize the best moments of our lives, with the people who matter most,<br>
-                                        <br>
-                                        while the road stretches endlessly ahead of us.<br>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        Now, if you’ve been invited to join this odyssey, congratulations, you’ve made it into Mihai’s inner circle. You are, without question, one of my most cherished individuals, someone I hold in high regard.<br>
-                                        <br>
-                                        As you scroll further, you’ll uncover all the details you’ll need, the map of destinations, the crew who’ll share the ride, who will drive and who will be the passenger princess.<br>
-                                        <br>
-                                        And the little luxuries we’ve planned to make this journey as unforgettable as the destinations themselves.<br>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        So, my friends, prepare yourselves. For this isn’t just a road trip. It’s an adventure. One that we’ll reminisce about for years to come.<br>
-                                        <br>
-                                        Buckle up. The road to memories begins here.</p>
-                                        <br>
-                                        <br>
-                                </div>
-
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+            <video autoplay loop muted playsinline class="hero-background-video">
+            <source src="Rolls Royce BGV.MP4" type="video/mp4">
+        </video>
+        <div class="hero-content" data-aos="fade" data-aos-duration="3000">
+            <div class="title-container">
+                <span class="side-line left-line"></span>
+                    <h1 class="hero-title">Mihai’s Grand Road Trip</h1>
+                <span class="side-line right-line"></span>
             </div>
+            <article class="introduction">
+                <p class="intro-text">What does this <em>“Road Trip”</em> truly means ? Well, it's far more than a journey from point A to point B.</p>
+                <p class="intro-text">This adventure springs from my deep passion for travel, exploration, and expanding my horizons, but, most of all, It's my love for cars and the sheer joy of driving.</p>
+                <p class="intro-text">I’ve envisioned this road trip to traverse countless countries in my favorite cars, alongside my closest friends, crafting memories that will last a lifetime.</p>
+                <p class="intro-text">Our plan ? To journey across the stunning expanse of continental Europe, a land rich with breathtaking architecture, vibrant culture, delectable cuisine, and endless wonders.</p>
+                <p class="intro-text">Yet, this is more than a celebration of cars and travel. It’s about cherished moments with the people who matter most. Laughing, toasting, and dreaming up plans as we wind through Europe’s scenic roads.</p>
+                <p class="intro-text">If you’re invited, you’re part of my inner circle, someone I deeply value. Below, you’ll find the itinerary, crew, roles, and luxuries that will make this journey unforgettable.</p>
+                <p class="intro-closing">So, buckle up, my friends. This isn’t just a road trip, it’s an adventure we’ll recount for years to come.</p>
+            </article>
+        </div>
+    </section>
 
-            <div class="map-m" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">
-                <h2>• MAP •</h2>
+    <!-- Map Section -->
+    <section class="content-section" id="map">
+        <h2 class="section-title" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">Route Map</h2>
+        <div class="section-container" id="map-container">
+            <video autoplay loop muted playsinline class="section-background-video">
+                <source src="Mercedes BGV.MP4" type="video/mp4">
+            </video>
+            <div class="map-embed" data-aos="zoom-in" data-aos-duration="3000">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=17vJ98rYc2MH7DQS7-9mrPwfwyud56YM&ehbc=2E312F" width="1100" height="680" title="Road Trip Route Map"></iframe>
             </div>
+        </div>
+    </section>
 
-            <div class="map-bg" style="color: #fff;">
-
-                <video autoplay loop muted plays-inline class="ma-bg">
-                    <source src="Mercedes BGV.MP4" type="video/mp4">
-                </video>
-
-                <div class="map-i" data-aos="zoom-in" data-aos-duration="3000">
-                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=17vJ98rYc2MH7DQS7-9mrPwfwyud56YM&ehbc=2E312F" width="1100" height="680"></iframe>
-                </div>
-            </div>
-
-            <div class="members-mju" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">
-                <h2>• MEMBERS JOINING US •</h2>
-            </div>
-    
-        <div class="members-bg">
-            <video autoplay loop muted plays-inline class="m-bg">
+    <!-- Members Section -->
+    <section class="content-section" id="members">
+        <h2 class="section-title" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">Participants</h2>
+        <div class="section-container" id="participants-container">
+            <video autoplay loop muted playsinline class="section-background-video">
                 <source src="Audi BGV.MP4" type="video/mp4">
             </video>
-
-            <div class="members-i" data-aos="fade-left" data-aos-duration="3000">
-                        <table class="sortable" border="6" style="border-color: burlywood; box-shadow: 0 0 16px burlywood;">
-                            <tr>
-                                <th style="color: #fff;">Members</th>
-                                    <th style="color: #fff;"> <a href="https://discord.gg/PPJvvzErsy" target="_blank" title="Open Discord" style="color: rgba(255, 255, 255, 0.353);">Discord</a>* Username</th>
-                            </tr>
-
-                            <tr>
-                                <td style="color: #fff;"><a href="https://www.instagram.com/c.mihai_16?igsh=c2Uwa2p1MXBicndv" title="Click to visit his Instagram account" target="_blank">Mihai</a>*</td>
-                                <td style="color: #fff;"><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1056615761331884053" title="Click to visit his Discord account" target="_blank">@cortac.mihai</a>*</td>
-                            </tr>
-
-                            <tr>
-                                <td style="color: #fff;"><a href="https://www.instagram.com/mikey_mihai?igsh=MTBjaXA5aHFpaTB4Zw==" title="Click to visit his Instagram account" target="_blank">Mihai</a>*</td>
-                                <td style="color: #fff;"><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1308572106295873596" title="Click to visit his Discord account" target="_blank">@marelemikey</a>*</td>
-
-                            <tr>
-                                <td style="color: #fff;"><a href="https://www.instagram.com/meryam_selmene?igsh=ZnpvYmRycm81cGh2" title="Click to visit her Instagram account" target="_blank">Meryam</a>*</td>
-                                <td style="color: #fff;"><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1221900563914948688" title="Click to visit her Discord account" target="_blank">@dexergum</a>*</td>
-                            </tr>
-
-                            <tr>
-                                <td style="color: #fff;"><a href="https://www.instagram.com/bnz.sandu?igsh=YWw3Ym9tZHAwajV0" title="Click to visit his Instagram account" target="_blank">Alexandru</a>*</td>
-                                <td style="color: #fff;"><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1225763098020024321" title="Click to visit his Discord account" target="_blank">@sandu217</a>*</td>
-                            </tr>
-
-                            <tr>
-                                <td style="color: #fff;"><a href="https://www.instagram.com/l_tr1ps?igsh=am42aXZ5cTAzeXhs" title="Click to visit his Instagram account" target="_blank">Laksh</a>*</td>
-                                <td style="color: #fff;"><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1163742478315298856" title="Click to visit his Discord account" target="_blank">@hairy_indian635</a>*</td>
-                            </tr>
-
-                            <tr>
-                                <td style="color: #fff;"><a href="https://www.instagram.com/somethinbouther?igsh=MTNycmRqdGwybXI1dA==" title="Click to visit his Instagram account" target="_blank">Ginoveva</a>*</td>
-                                <td style="color: #fff;"><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1158481225976135840" title="Click to visit her Discord account" target="_blank">@khaos_222</a>*</td>
-                            </tr>
-
-                            <tr>
-                                <td style="color: #fff;">Prez</td>
-                                <td style="color: #fff;"><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1061183071325536336" title="Click to visit her Discord account" target="_blank">@me_for_prez</a>*</td>
-                            </tr>
-
-                            <tr>
-                                <td style="color: #fff;"><a href="https://www.instagram.com/dredaym_?igsh=MWV1bG8zdDJyMmVtcA==" title="Click to visit her Instagram account" target="_blank">DayDream</a>*</td>
-                                <td style="color: #fff;"><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1183784170003116092" title="Click to visit her Discord account" target="_blank">@daydream8618</a>*</td>
-                            </tr>
-
-                            <tr>
-                                <td style="color: #fff;">Nameless Guy</td>
-                                <td style="color: #fff;"><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1312881035750412369" title="Click to visit his Instagram account" target="_blank">@johncena88</a>*</td>
-                            </tr>
-                        </table>
-            </div>
-                <br>
-                <br>
-            <div class="members-t" data-aos="fade-right" data-aos-duration="3000">
-                <table border="3" style="border-color: burlywood; box-shadow: 0 0 16px burlywood;">
-                    <tr>
-                        <th style="color: #fff;">Total</th>
-                            <td style="color: #fff;">9</td>
-                    </tr>
+            <div class="participants-table" data-aos="fade-left" data-aos-duration="3000">
+                <table class="sortable-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th><a href="https://discord.gg/PPJvvzErsy" target="_blank" title="Join Discord">Discord</a> Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><a href="https://www.instagram.com/c.mihai_16?igsh=c2Uwa2p1MXBicndv" target="_blank">Mihai</a></td><td><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1056615761331884053" target="_blank">@cortac.mihai</a></td></tr>
+                        <tr><td><a href="https://www.instagram.com/mikey_mihai?igsh=MTBjaXA5aHFpaTB4Zw==" target="_blank">Mihai</a></td><td><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1308572106295873596" target="_blank">@marelemikey</a></td></tr>
+                        <tr><td><a href="https://www.instagram.com/meryam_selmene?igsh=ZnpvYmRycm81cGh2" target="_blank">Meryam</a></td><td><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1221900563914948688" target="_blank">@dexergum</a></td></tr>
+                        <tr><td><a href="https://www.instagram.com/bnz.sandu?igsh=YWw3Ym9tZHAwajV0" target="_blank">Alexandru</a></td><td><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1225763098020024321" target="_blank">@sandu217</a></td></tr>
+                        <tr><td><a href="https://www.instagram.com/l_tr1ps?igsh=am42aXZ5cTAzeXhs" target="_blank">Laksh</a></td><td><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1163742478315298856" target="_blank">@hairy_indian635</a></td></tr>
+                        <tr><td><a href="https://www.instagram.com/somethinbouther?igsh=MTNycmRqdGwybXI1dA==" target="_blank">Ginoveva</a></td><td><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1158481225976135840" target="_blank">@khaos_222</a></td></tr>
+                        <tr><td>Prez</td><td><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1061183071325536336" target="_blank">@me_for_prez</a></td></tr>
+                        <tr><td><a href="https://www.instagram.com/dredaym_?igsh=MWV1bG8zdDJyMmVtcA==" target="_blank">DayDream</a></td><td><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1183784170003116092" target="_blank">@daydream8618</a></td></tr>
+                        <tr><td>Nameless Guy</td><td><a href="https://discord.com/channels/1056550844050452540/1056550845589758025/1312881035750412369" target="_blank">@johncena88</a></td></tr>
+                    </tbody>
                 </table>
-                <br>
+                <div class="total-count" data-aos="fade-right" data-aos-duration="3000">
+                    <table>
+                        <tr><th>Total</th><td>9</td></tr>
+                    </table>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="drivers-dnp" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">
-            <h2>• DRIVERS & PASSENGERS •</h2>
-        </div>
-
-        <div class="drivers-bg">
-            <video autoplay loop muted plays-inline class="d-bg">
+    <!-- Drivers Section -->
+    <section class="content-section" id="drivers-passengers">
+        <h2 class="section-title" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">Drivers & Passengers</h2>
+        <div class="section-container" id="drivers-container">
+            <video autoplay loop muted playsinline class="section-background-video">
                 <source src="Aston Martin BGV.MP4" type="video/mp4">
             </video>
-
-            <div class="drivers-i" data-aos="fade-left" data-aos-duration="3000">
-                        <table border="6" style="border-color: burlywood; box-shadow: 0 0 16px burlywood;">
-                            <tr>
-                                <th style="color: #fff;">Drivers</th>
-                                <th style="color: #fff;">Passengers</th>
-                            </tr>
-
-                            <tr>
-                                <td style="color: #fff;"><a href="https://www.instagram.com/c.mihai_16?igsh=c2Uwa2p1MXBicndv" title="Click to visit his Instagram account" target="_blank">Mihai</a>*</td>
-                                <td style="color: #fff;">Prez</td>
-                            </tr>
-
-                            <tr>
-                                <td style="color: #fff;"><a href="https://www.instagram.com/mikey_mihai?igsh=MTBjaXA5aHFpaTB4Zw==" title="Click to visit his Instagram account" target="_blank">Mihai</a>*</td>
-                                <td style="color: #fff;">? ? ?</td>
-                            </tr>
-
-                            <tr>
-                                <td style="color: #fff;"><a href="https://www.instagram.com/meryam_selmene?igsh=ZnpvYmRycm81cGh2" title="Click to visit her Instagram account" target="_blank">Meryam</a>*</td>
-                                <td style="color: #fff;">? ? ?</td>
-                            </tr>
-
-                            <tr>
-                                <td style="color: #fff;"><a href="https://www.instagram.com/bnz.sandu?igsh=YWw3Ym9tZHAwajV0" title="Click to visit his Instagram account" target="_blank">Alexandru</a>*</td>
-                                <td style="color: #fff;"><a href="https://www.instagram.com/somethinbouther?igsh=MTNycmRqdGwybXI1dA==" title="Click to visit his Instagram account" target="_blank">Ginoveva</a>*</td>
-                            </tr>
-
-                            <tr>
-                                <td style="color: #fff;"><a href="https://www.instagram.com/l_tr1ps?igsh=am42aXZ5cTAzeXhs" title="Click to visit his Instagram account" target="_blank">Laksh</a>*</td>
-                                <td style="color: #fff;">? ? ?</td>
-                            </tr>
-
-                            <tr>
-                                <td style="color: #fff;">Nameless Guy</td>
-                                <td style="color: #fff;"><a href="https://www.instagram.com/dredaym_?igsh=MWV1bG8zdDJyMmVtcA==" title="Click to visit her Instagram account" target="_blank">DayDream</a>*</td>
-                            </tr>
-                        </table>
-                    <br>
+            <div class="drivers-table" data-aos="fade-left" data-aos-duration="3000">
+                <table>
+                    <thead>
+                        <tr><th>Driver</th><th>Passenger</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><a href="https://www.instagram.com/c.mihai_16?igsh=c2Uwa2p1MXBicndv" target="_blank">Mihai</a></td><td>Prez</td></tr>
+                        <tr><td><a href="https://www.instagram.com/mikey_mihai?igsh=MTBjaXA5aHFpaTB4Zw==" target="_blank">Mihai</a></td><td>? ? ?</td></tr>
+                        <tr><td><a href="https://www.instagram.com/meryam_selmene?igsh=ZnpvYmRycm81cGh2" target="_blank">Meryam</a></td><td>? ? ?</td></tr>
+                        <tr><td><a href="https://www.instagram.com/bnz.sandu?igsh=YWw3Ym9tZHAwajV0" target="_blank">Alexandru</a></td><td><a href="https://www.instagram.com/somethinbouther?igsh=MTNycmRqdGwybXI1dA==" target="_blank">Ginoveva</a></td></tr>
+                        <tr><td><a href="https://www.instagram.com/l_tr1ps?igsh=am42aXZ5cTAzeXhs" target="_blank">Laksh</a></td><td>? ? ?</td></tr>
+                        <tr><td>Nameless Guy</td><td><a href="https://www.instagram.com/dredaym_?igsh=MWV1bG8zdDJyMmVtcA==" target="_blank">DayDream</a></td></tr>
+                    </tbody>
+                </table>
             </div>
-
         </div>
+    </section>
 
-        <div class="assistance-anfm" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">
-            <h2>• ASSISTANCE & FILMING CREW •</h2>
-        </div>
-
-        <div class="assistance-bg">
-            <video autoplay loop muted plays-inline class="a-bg">
+    <!-- Support Crew Section -->
+    <section class="content-section" id="crew">
+        <h2 class="section-title" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">Support & Filming Crew</h2>
+        <div class="section-container" id="support-container">
+            <video autoplay loop muted playsinline class="section-background-video">
                 <source src="Porsche GT3 RS BGV.MP4" type="video/mp4">
             </video>
-
-            <div class="assistance-s" data-aos="fade-right" data-aos-duration="3000">
-                <b>◉ A team of 16 people will accompany us on this adventure, fuffilling the following roles:</b>
+            <div class="support-details">
+                <p class="support-overview" data-aos="fade-right" data-aos-duration="3000">A team of 16 will join us, fulfilling these roles:</p>
+                <ul class="support-list">
+                    <li data-aos="fade-left" data-aos-duration="3000">
+                        <strong>Nine Drivers:</strong> 6 for the <a href="#fleet">crew cars</a>, plus 3 additional support drivers.
+                        <span class="role-description">They’ll ensure smooth driving shifts and handle any vehicle related needs during the journey.</span>
+                    </li>
+                    <li data-aos="fade-left" data-aos-duration="3000">
+                        <strong>Two Camera Operators:</strong> Using <a href="https://www.sony.fr/interchangeable-lens-cameras/products/ilme-fx6" target="_blank">Sony cameras</a> to capture every moment.
+                        <span class="role-description">They’ll document the trip’s highlights, from scenic drives to group celebrations.</span>
+                    </li>
+                    <li data-aos="fade-left" data-aos-duration="3000">
+                        <strong>Two Drone Operators:</strong> Flying <a href="https://store.dji.com/fr/product/dji-inspire-3" target="_blank">DJI drones</a> for cinematic aerial footage.
+                        <span class="role-description">They’ll capture stunning overhead views of the convoy and landscapes, especially during campsites.</span>
+                    </li>
+                    <li data-aos="fade-left" data-aos-duration="3000">
+                        <strong>Two Assistants:</strong> Managing bookings, safety, and logistics.
+                        <span class="role-description">They’ll handle reservations, ensure safety protocols, and manage funds for gas, tolls, and stops.</span>
+                    </li>
+                    <li data-aos="fade-left" data-aos-duration="3000">
+                        <strong>One Photographer:</strong> With a <a href="https://www.sony.fr/store/product/ilce1b.cec" target="_blank">Sony Alpha 1</a> to preserve memories.
+                        <span class="role-description">Hey’ll take high quality stills of the group, cars, and destinations for lasting keepsakes.</span>
+                    </li>
+                </ul>
+                <p class="support-summary" data-aos="fade-left" data-aos-duration="3000">The crew will use top-tier gear to ensure a seamless, stress-free journey.</p>
             </div>
-
-                <br>
-
-            <div class="assistance-t" data-aos="fade-left" data-aos-duration="3000">
-                <b>◉ Nine Drivers</b>
-            </div>
-
-            <div class="assistance-i" data-aos="fade-right" data-aos-duration="3000">
-                <p>◎ 6 drivers for the <a href="#crew-cars">6 crew cars</a>*, along with 3 additional drivers to assist the crew or ourselves.</p>
-            </div>
-
-                <br>
-
-            <div class="assistance-t" data-aos="fade-left" data-aos-duration="3000">
-                <b>◉ Two Camera Operators</b>
-            </div>
-
-            <div class="assistance-i" data-aos="fade-right" data-aos-duration="3000">
-                <p>◎ Two <a href="https://www.sony.fr/interchangeable-lens-cameras/products/ilme-fx6" title="View camera" target="_blank">camera</a><span style="color: #fff;">*</span> operators to ensure every beautiful moment of the journey is perfectly captured.</p>
-            </div>
-
-                <br>
-
-            <div class="assistance-t" data-aos="fade-left" data-aos-duration="3000">
-                <b>◉ Two Drone Operators</b>
-            </div>
-
-            <div class="assistance-i" data-aos="fade-right" data-aos-duration="3000">
-                <p>◎ Two <a href="https://store.dji.com/fr/product/dji-inspire-3?from=search-result-v2&position=0&total_result=104&vid=136551" title="View drone" target="_blank">drone</a><span style="color: #fff;">*</span> perators to capture stunning cinematic footage of the road trip, the surrounding nature as we drive, or the landscapes while we camp.</p>
-            </div>
-
-                <br>
-
-            <div class="assistance-t" data-aos="fade-left" data-aos-duration="3000">
-                <b>◉ Two Assistants</b>
-            </div>
-
-            <div class="assistance-i" data-aos="fade-right" data-aos-duration="3000">
-                <p>◎ Two assistants to ensure a smooth road trip by managing all our bookings in advance and ensuring safety.<br>
-                    They’ll also check that drivers have funds for gas, tolls, and vignettes, and that everyone has money for stops.<br>
-                    If needed, Mihai or the assistants can provide additional support, don't be shy to ask.</p>
-            </div>
-
-                <br>
-
-            <div class="assistance-t" data-aos="fade-left" data-aos-duration="3000">
-                <b>◉ One Photographer</b>
-            </div>
-
-            <div class="assistance-i" data-aos="fade-right" data-aos-duration="3000">
-                <p>◎ One <a href="https://www.sony.fr/store/product/ilce1b.cec/Alpha-1-avec-une-r%C3%A9solution-et-une-vitesse-exceptionnelles" title="View camera" target="_blank">photographer</a><span style="color: #fff;">*</span> to capture every moment of the trip, ensuring all memories are preserved beautifully along the way.</p>
-            </div>
-
-                <br>
-
-            <div class="assistance-e" data-aos="fade-left" data-aos-duration="3000">
-                <b>◉ The crew  will be equipped with the best gear to ensure their tasks are handled efficiently, making the road trip smooth and stress-free for everyone.</b>
-            </div>
-
-        </div>  
-
-                <div class="guidelines-g" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">
-                    <h2>• GUIDELINES •</h2>
-                </div>
-
-            <div class="guidelines-bg">
-                <video autoplay loop muted plays-inline class="g-bg">
-                    <source src="Lamborghini BGV.MP4" type="video/mp4">
-                </video>
-    
-
-                <div class="guidelines-i">
-
-                    <h5>
-                            <p style="color: bisque;" data-aos="fade-right" data-aos-duration="3000">- No drug use at any time.</p>
-                        <br>
-                        <br>
-                        <br>
-                            <p style="color: bisque;" data-aos="fade-left" data-aos-duration="3000">- No alcohol consumption while driving.</p>
-                        <br>
-                        <br>
-                        <br>
-                            <p style="color: bisque;" data-aos="fade-right" data-aos-duration="3000">- Respect personal boundaries: no sexual activities.</p>
-                        <br>
-                        <br>
-                        <br>
-                            <p style="color: bisque;" data-aos="fade-left" data-aos-duration="3000">- Keep the <span style="color: red;">INTERIOUR</span> of the vehicles <span style="color: red;">CLEAN</span>.</p>
-                        <br>
-                        <br>
-                        <br>
-                            <p style="color: bisque;" data-aos="fade-right" data-aos-duration="3000">- Prioritize safety: wear seatbelts at all times.</p>
-                        <br>
-                        <br>
-                        <br>
-                            <p style="color: bisque;" data-aos="fade-left" data-aos-duration="3000">- Be punctual: adhere to the agreed departure time.</p>
-                    </h5>
-                </div>
-
-            </div>
-
-            <div class="vehicules-rtv" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">
-                <h2>• ROAD TRIP VEHICLES •</h2>
-            </div>
-
-            <div class="vehicules-bg">
-                <video autoplay loop muted plays-inline class="v-bg">
-                <source src="Ferrari BGV.MP4" type="video/mp4">
-                </video>
-
-                <br>
-
-                <div class="vehicules-i" data-aos="fade-up" data-aos-duration="3000">
-                    <br>
-                        <h4 style="color: #fff; text-shadow: 0 0 1.8px white;">• THE MAIN CARS •</h4>
-                            <br>
-
-                    <h5 style="color: #fff;" data-aos="fade-right" data-aos-duration="3000">
-                        1. Mihai - <a href="Rolls-Royce_Phantom-Extended 2.pdf" title="View car" target="_blank">Rolls Royce Phantom Extended</a>*
-                            <br>
-                            <br>
-                        2. Laksh - <a href="Rolls-Royce_Black-Badge_Cullinan.pdf" title="View car" target="_blank">Rolls Royce Black Badge Cullinan</a>*
-                            <br>
-                            <br>
-                        3. Nameless Guy - <a href="Rolls-Royce_Black-Badge_Ghost 2.pdf" title="View car" target="_blank">Rolls Royce Black Badge Ghost</a>*
-                            <br>
-                            <br>
-                        4. Mihai - <a href="Porsch_911_GT3_RS.pdf" title="View car" target="_blank">Porsche 911 GT3 RS</a>*
-                            <br>
-                            <br id="crew-cars">
-                        5. Meryam - <a href="Porsche_911_Carrera_Cabriolet.pdf" title="View car" target="_blank">Porsche 911 Turbo S Cabriolet</a>*
-                            <br>
-                            <br>
-                        6. Alexandru - <a href="Audi _RS-6_Avant .pdf" title="View car" target="_blank">Audi RS6</a>*
-                            <br>
-                           
-                            
-                    </h5>
-
-                            <br>
-
-                        <h4 style="color: #fff; text-shadow: 0 0 1.8px white;" data-aos="fade-up" data-aos-duration="3000">• THE CREW •</h4>
-                            <br>
-                    <h5 style="color: #fff;" data-aos="fade-left" data-aos-duration="3000">
-                        1. <a href="Mercedes_Maybach_GLS-600.pdf" title="View car" target="_blank">Mercedes GLS 600 Maybach</a>*
-                            <br>
-                            <br>
-                        2. <a href="Mercedes-AMG_G_63.pdf" title="View car" target="_blank">Mercedes G63 Class</a>*
-                            <br>
-                            <br>
-                        3. <a href="Mercedes-AMG_G_63_M2NGJ9CL.pdf" title="View car" target="_blank">Mercedes G63 Class</a>*
-                            <br>
-                            <br>
-                        4. <a href="Mercedes_V-Class_Extra_Long.pdf" title="View car" target="_blank">Mercedes V Class</a>*
-                            <br>
-                            <br>
-                        5. <a href="Mercedes_Maybach-S_680.pdf" title="View car" target="_blank">Mercedes Maybach S680</a>*
-                            <br>
-                            <br>   
-                        6. <a href="Cadillac_2023_Escalade_ESV.pdf" title="View car" target="_blank">Cadillac Escalade ESV</a>*
-                            <br>
-                    </h5>
-                            <br>
-
-                    <h4 style="color: #fff; text-shadow: 0 0 1.8px white;" data-aos="fade-up" data-aos-duration="3000">• REMAINING CARS •</h4>
-                        <br>
-                    <h5 style="color: #fff;" data-aos="fade-right" data-aos-duration="3000">
-                        1. <a href="Bentley_Bentayga-EWB.pdf" title="View car" target="_blank">Bentley Bentayga EWB</a>*
-                            <br>
-                            <br>
-                        2. <a href="Bentley_Continental_GTC_Speed-V8_Hybrid-First Edition.pdf" title="View car" target="_blank">Bentley Continental GTC</a>*
-                            <br>
-                            <br>
-                        3. <a href="Bentley_Flying-Spur_Speed_V8_Hybrid-First Edition.pdf" title="View car" target="_blank">Bentley Flying Spur Speed</a>*
-                            <br>
-                            <br>
-                        4. <a href="BMW-M4_Competition.pdf" title="View car" target="_blank">BMW M4 Competition</a>*
-                            <br>
-                            <br>
-                        5. <a href="Ferrari_812-Competizione_A_cfsO5iC.pdf" title="View car" target="_blank">Ferrari 812 Competizione</a>* 
-                            <br>
-                            <br>
-                        6. <a href="Ferrari_Daytona .pdf" title="View car" target="_blank">Ferrari Daytona</a>*
-                            <br>
-                            <br>
-                        7. <a href="Ferrari_Purosangue.pdf" title="View car" target="_blank">Ferrari Purosangue</a>*
-                            <br>
-                            <br>
-                        8. <a href="Ferrari-SF90_Spider_Y4fnXCo.pdf" title="View car" target="_blank">Ferrari SF90 Spider</a>*
-                            <br>
-                            <br>
-                        9. <a href="Lamborghini_Huracan_EVO_Spyder.pdf" title="View car" target="_blank">Lamborghini Huracan EVO Spyder</a>*
-                            <br>
-                            <br>
-                        10. <a href="Lamborghini_Revuelto.pdf" title="View car" target="_blank">Lamborghini Revuelto</a>*
-                            <br>
-                            <br>
-                        11. <a href="Lamborghini_Temerario.pdf" title="View car" target="_blank">Lamborghini Temerario</a>*
-                            <br>
-                            <br>
-                        12. <a href="Lamborghini_Urus.pdf" title="View car" target="_blank">Lamborghini Urus S</a>*
-                            <br>
-                            <br>
-                        13. <a href="Maserati__MC20_Cielo.pdf" title="View car" target="_blank">Maserati MC20 Cielo</a>*
-                            <br>
-                            <br>
-                        14. <a href="Maserati_Gran-Cabrio_Trofeo.pdf" title="View car" target="_blank">Maserati Gran Cabrio Trofeo</a>*
-                            <br>
-                            <br>
-                        15. <a href="Maserati_GranTurismo.pdf" title="View car" target="_blank">Maserati GranTurismo</a>*
-                            <br>
-                            <br>
-                        16. <a href="Maserati_GT2_Stradale.pdf" title="View car" target="_blank">Maserati GT2 Stradale</a>*
-                            <br>
-                            <br>
-                        17. <a href="Mercedes_AMG-SL_63.pdf" title="View car" target="_blank">Mercedes AMG SL63</a>*
-                            <br>
-                            <br>
-                        18. <a href="Mercedes-AMG_GT_4-Door_63.pdf" title="View car" target="_blank">Mercedes AMG GT 4Door</a>*  
-                            <br>
-                            <br>
-                        19. <a href="Mercedes-AMG_GT_63_PRO_4MATIC+.pdf" title="View car" target="_blank">Mercedes AMG GT63 PRO</a>* 
-                            <br>
-                            <br>
-                        20. <a href="Mercedes-AMG_S_63_E_Performance.pdf" title="View car" target="_blank">Mercedes AMG S63 E Performance</a>*  
-                            <br>
-                            <br>
-                        21. <a href="Porsche_718_Cayman_GT4-RS.pdf" title="View car" target="_blank">Porsche 718 Cayman GT4 RS</a>*  
-                            <br>
-                            <br>
-                        22. <a href="Porsche_718_Spyder_RS.pdf" title="View car" target="_blank">Porsche 718 Spyder RS</a>* 
-                            <br>
-                            <br>
-                        23. <a href="Porsche_911_Carrera_Cabriolet.pdf" title="View car" target="_blank">Porsche 911 Carrera Cabriolet</a>*  
-                            <br>
-                            <br>
-                        24. <a href="Porsche_Cayenne_Turbo-E-Hybrid-Coupe_GT.pdf" title="View car" target="_blank">Porsche Cayenne Coupe GT</a>* 
-                            <br>
-                            <br>
-                        25. <a href="Range-Rover_Autobiography | Empattement_Long.pdf" title="View car" target="_blank">Range Rover</a>*   
-                    </h5>
-                </div>
-                <br>
-
-            </div>
-
-            <div class="others-o" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">
-                <h2>• OTHERS •</h2>
-            </div>
-            <div class="others-bg">
-                <video autoplay loop muted plays-inline class="o-bg">
-                <source src="BMW BGV.MP4" type="video/mp4">
-                </video>
-
-                <div class="others-i">
-
-                    <h5>
-                            <p style="color: bisque;" data-aos="fade-left" data-aos-duration="3000">- We will use radios (walkie-talkies) for communication between cars.</p>
-                        <br>
-                        <br>
-                        <br>
-                            <p style="color: bisque;" data-aos="fade-right" data-aos-duration="3000">- Plan and share a rough itinerary to avoid confusion.</p>
-                        <br>
-                        <br>
-                        <br>
-                            <p style="color: bisque;" data-aos="fade-left" data-aos-duration="3000">- Keep an emergency kit in each vehicle.</p>
-                        <br>
-                        <br>
-                        <br>
-                            <p style="color: bisque;" data-aos="fade-right" data-aos-duration="3000">- Be mindful of music volume to ensure everyone's comfort.</p>
-                        <br>
-                        <br>
-                        <br>
-                            <p style="color: bisque;" data-aos="fade-left" data-aos-duration="3000">- Rotate seating positions to mix and mingle during the trip.</p>
-                        <br>
-                        <br>
-                        <br>
-                            <p style="color: bisque;" data-aos="fade-right" data-aos-duration="3000">- Respect the environment: dispose of trash responsibly during stops.</p>
-                        <br>
-                        <br>
-                        <br>
-                            <p style="color: bisque;" data-aos="fade-left" data-aos-duration="3000">- Everyone will receive a
-                                <a href="https://www.samsung.com/fr/computers/galaxy-book/galaxy-book4-pro360/buy/?modelCode=NP960QGK-KS2FR" title="The Laptop 🤷‍♂️" target="_blank"><b><i>Laptop</i></b></a><span style="color: #fff;">*</span> with
-                                <a href="https://www.samsung.com/fr/computer-accessories/galaxy-book3-slim-pouch-14-inch-ef-lpun4pbegww/" title="The Equipemnt 🤷‍♂️" target="_blank"><b><i>Equipemnt</i></b></a><span style="color: #fff;">*</span> a
-                                <a href="https://www.apple.com/fr/shop/buy-ipad/ipad-pro/%C3%A9cran-de-12,9-pouces-2to-gris-sid%C3%A9ral-wifi-cellular" title="The Tablet 🤷‍♂️" target="_blank"><b><i>Tablet</i></b></a><span style="color: #fff;">*</span> and a brand new
-                                <a href="https://www.samsung.com/fr/smartphones/galaxy-s24-ultra/buy/?cid=fr_pd_ppc_google_f1h24-e1-exact_launch_shop-im_text_none_none&&&&&gad_source=1&gclid=Cj0KCQiAwvKtBhDrARIsAJj-kTiR7BAwAvDG6OXiRr6aDNcJKsrf9lxSxpIu00X4h8tGg8fmjZTOixEaAncAEALw_wcB&gclsrc=aw.ds" title="The Phone 🤷‍♂️" target="_blank"><b><i>Phone</i></b></a><span style="color: #fff;">*</span> with 
-                                <a href="https://www.samsung.com/fr/mobile-accessories/galaxy-s24-ultra-standing-grip-case-taupe-ef-gs928cuegww/" title="The Equipemnt 🤷‍♂️" target="_blank"><b><i>Equipemnt</i></b></a><span style="color: #fff;">*</span> to use during the trip for entertainment.</p>
-                        <br>
-                        <br>
-                            <p style="color: #ffe4c4;" data-aos="fade-right" data-aos-duration="3000">- For people joining Mihai, this will be the main <a href="https://open.spotify.com/playlist/3kEIdAmDivDY81GpN9Z4Hj?si=XpIUCxJnQq6s9TzaLAm42g" title="Open in Spotify" target="_blank">Music Playlist</a><span style="color: #fff;">*</span>that will be playing in the car.</p>
-                    </h5>
-                </div>
-
-            </div>
-
-            <div class="extras-e" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">
-                <h2>• EXTRAS •</h2>
-            </div>
-
-            <div class="extras-bg">
-                <video autoplay loop muted plays-inline class="e-bg">
-                <source src="Mercedes BGV.MP4" type="video/mp4">
-                </video>
-
-                <div class="extras-i">
-                    <h4>
-                            <p style="color: bisque;" data-aos="fade-left" data-aos-duration="3000">- Pillows</p>
-                        <br>
-                        <br>
-                            <p style="color: bisque;" data-aos="fade-right" data-aos-duration="3000">- Blankets</p>
-                        <br>
-                        <br>
-                            <p style="color: bisque;" data-aos="fade-left" data-aos-duration="3000">- Headphones</p>
-                        <br>
-                        <br>
-                           <p  style="color: bisque;" data-aos="fade-right" data-aos-duration="3000">- RC batteries</p>
-                        <br>
-                        <br>
-                    </h4>
-                </div>
-
-            </div>    
-
-        <div class="bonuses-b" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">
-            <h2>• BONUSES •</h2>
         </div>
+    </section>
 
-        <div class="bonuses-bg">
-            <video autoplay loop muted plays-inline class="b-bg">
-            <source src="Bentley Continental GT V8 BGV.MP4" type="video/mp4">
+    <!-- Guidelines Section -->
+    <section class="content-section" id="rules">
+        <h2 class="section-title" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">Trip Guidelines</h2>
+        <div class="section-container" id="rules-container">
+            <video autoplay loop muted playsinline class="section-background-video">
+                <source src="Lamborghini BGV.MP4" type="video/mp4">
             </video>
+            <p class="rules-overview" data-aos="fade-right" data-aos-duration="3000">These are the essential guidelines to ensure a safe and enjoyable trip:</p>
+            <ul class="rules-list">
+                <li data-aos="fade-left" data-aos-duration="3000"><span>Keep the vehicle's interiors clean.</span></li>
+                <li data-aos="fade-right" data-aos-duration="3000">No drug use at any time.</li>
+                <li data-aos="fade-left" data-aos-duration="3000">No alcohol consumption while driving.</li>
+                <li data-aos="fade-right" data-aos-duration="3000">Respect personal boundaries: no sexual activities.</li>
+                <li data-aos="fade-right" data-aos-duration="3000">Prioritize safety: wear seatbelts at all times.</li>
+                <li data-aos="fade-left" data-aos-duration="3000">Be punctual: adhere to departure times.</li>
+                <li data-aos="fade-right" data-aos-duration="3000">Keep music volume at a reasonable level for everyone's comfort.</li>
+                <li data-aos="fade-left" data-aos-duration="3000">Dispose of the trash responsibly.</li>
+                <li data-aos="fade-right" data-aos-duration="3000">Rotate seating regularly to foster team bonding.</li>
+            </ul>
+            <p class="rules-summary" data-aos="fade-left" data-aos-duration="3000">Following these rules will ensures a seamless and respectful journey for all.</p>
+        </div>
+    </section>
 
-            <div class="bonuses-i">
-
-                <h4 data-aos="fade-right" data-aos-duration="3000">For Mihai:</h4>  
-                <br>      
-            <p style="color: #fff;" data-aos="zoom-in" data-aos-duration="3000">
-                    - <a href="https://www.motionrc.com/products/bancroft-alpha-yellow-brushless-950mm-37-4-extreme-deep-v-racer-rtr-bnc1040-002" title="Open Motion RC" target="_blank">Alpha Brushless</a>*
-                <br>
-                <br>
-                    - <a href="https://www.motionrc.com/products/chasing-m2-professional-submersible-rov-with-4k-video-rtr-chs40-10-202-0001" title="Open Motion RC" target="_blank">M2 Professional Submersible ROV</a>*
-                <br>
-                <br>
-                    - <a href="https://shop.directdrive.com/products/tita" title="Open Directdrive" target="_blank">TITA</a>*
-                <br>
-                <br>
-                    - <a href="https://eu.spyra.com/collections/all#blasters" title="Open Directdrive" target="_blank">Spyra</a>*
-                <br>
-                <br>
-                     - <a href="https://www.blasterparts.com/en/c/product-categories/nerf-dartblaster/nerf-blaster?atype%5B%5D=Rifle" title="Open Directdrive" target="_blank">Nerf Blaster</a>*
-            </p>
-
-                <br>
-            <h4 data-aos="fade-right" data-aos-duration="3000">For Meryam:</h4>  
-                <br>
-                <p style="color: #fff;" data-aos="zoom-in" data-aos-duration="3000">
-                    - <a href="https://clubllondon.com/products/carlotta-black-bardot-maxi-dress-with-chiffon-cape-cl131000002?_gl=1*ws0t62*_up*MQ..*_ga*MzgyMzQyMTgxLjE3MTY0ODAzNjc.*_ga_DE51YBQJPD*MTcxNjQ4MDM2Ny4xLjAuMTcxNjQ4MDM2Ny42MC4wLjA." title="Open C L U B L" target="_blank">Black Bardot Maxi Dress With Chiffon Cape</a>*
-                        <br>
-                        <br>
-                    - <a href="https://www.amazon.ca/Deceny-CB-Party-Gloves-Shirred/dp/B01N34RSYF?th=1&psc=1" title="Open Amazon" target="_blank">Deceny CB Party Gloves for Women Long Satin Opera Gloves Shirred Elbow Gloves</a>*
-                        <br>
-                        <br>
-                    - <a href="https://www.ysl.com/fr-fr/sacs-porte-epaule/kate-medium-reversible-en-suede-5538040UD7W1000.html" title="Open Saint Laurent" target="_blank">Kate Medium Reversible In Suede</a>*
-                        <br>
-                        <br>
-                    - <a href="https://www.ysl.com/en-en/sandals/opyum-sandals-in-patent-leather-5576620NPKK1000.html" title="Open Saint Laurent" target="_blank">Opyum Sandals In Patent Leather</a>*
-                </p>
-
-                <br>
-                    <h4 data-aos="fade-left" data-aos-duration="3000">For DD:</h4>
-                <br>
-                    <p style="color: #fff;" data-aos="zoom-in" data-aos-duration="3000">
-                            - Paper
-                        <br>
-                        <br>
-                            - Custom made “Horten 229” from <a href="https://www.motionrc.com/" title="Open Motion RC" target="_blank">Motion RC</a>*
-                    </p>
-                        <br>
-
+<!-- Vehicles Section -->
+<section class="content-section" id="vehicles">
+    <h2 class="section-title" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">Vehicle Fleet</h2>
+    <div class="section-container" id="fleet-container">
+        <video autoplay loop muted playsinline class="section-background-video">
+            <source src="Ferrari BGV.MP4" type="video/mp4">
+        </video>
+        <div class="fleet-details" data-aos="fade-up" data-aos-duration="3000">
+            <h3 class="fleet-subtitle">Main Cars</h3>
+            <ul class="fleet-list">
+                <li data-aos="fade-left" data-aos-duration="3000"><span>Mihai - <a href="Rolls-Royce_Phantom-Extended 2.pdf" target="_blank">Rolls Royce Phantom Extended</a></span></li>
+                <li data-aos="fade-right" data-aos-duration="3000"><span>Laksh - <a href="Rolls-Royce_Black-Badge_Cullinan.pdf" target="_blank">Rolls Royce Black Badge Cullinan</a></span></li>
+                <li data-aos="fade-left" data-aos-duration="3000"><span>Nameless Guy - <a href="Rolls-Royce_Black-Badge_Ghost 2.pdf" target="_blank">Rolls Royce Black Badge Ghost</a></span></li>
+                <li data-aos="fade-right" data-aos-duration="3000"><span>Mihai - <a href="Porsch_911_GT3_RS.pdf" target="_blank">Porsche 911 GT3 RS</a></span></li>
+                <li data-aos="fade-left" data-aos-duration="3000"><span>Meryam - <a href="Porsche_911_Carrera_Cabriolet.pdf" target="_blank">Porsche 911 Turbo S Cabriolet</a></span></li>
+                <li data-aos="fade-right" data-aos-duration="3000"><span>Alexandru - <a href="Audi _RS-6_Avant .pdf" target="_blank">Audi RS6</a></span></li>
+            </ul>
+            <h3 class="fleet-subtitle">Crew Vehicles</h3>
+            <ul class="fleet-list">
+                <li data-aos="fade-right" data-aos-duration="3000"><span><a href="Mercedes_Maybach_GLS-600.pdf" target="_blank">Mercedes GLS 600 Maybach</a></span></li>
+                <li data-aos="fade-left" data-aos-duration="3000"><span><a href="Mercedes-AMG_G_63.pdf" target="_blank">Mercedes G63 Class</a></span></li>
+                <li data-aos="fade-right" data-aos-duration="3000"><span><a href="Mercedes-AMG_G_63_M2NGJ9CL.pdf" target="_blank">Mercedes G63 Class</a></span></li>
+                <li data-aos="fade-left" data-aos-duration="3000"><span><a href="Mercedes_V-Class_Extra_Long.pdf" target="_blank">Mercedes V Class</a></span></li>
+                <li data-aos="fade-right" data-aos-duration="3000"><span><a href="Mercedes_Maybach-S_680.pdf" target="_blank">Mercedes Maybach S680</a></span></li>
+                <li data-aos="fade-left" data-aos-duration="3000"><span><a href="Cadillac_2023_Escalade_ESV.pdf" target="_blank">Cadillac Escalade ESV</a></span></li>
+            </ul>
+            <!-- Collapsible Additional Vehicles Section -->
+            <div class="collapsible-section">
+                <button class="collapsible-btn" onclick="toggleCollapse()">Additional Vehicles</button>
+                <div class="collapsible-content">
+                    <ul class="fleet-list">
+                        <li data-aos="fade-right" data-aos-duration="3000"><a href="Bentley_Bentayga-EWB.pdf" target="_blank">Bentley Bentayga EWB</a></li>
+                        <li data-aos="fade-left" data-aos-duration="3000"><a href="Bentley_Continental_GTC_Speed-V8_Hybrid-First Edition.pdf" target="_blank">Bentley Continental GTC</a></li>
+                        <li data-aos="fade-right" data-aos-duration="3000"><a href="Bentley_Flying-Spur_Speed_V8_Hybrid-First Edition.pdf" target="_blank">Bentley Flying Spur Speed</a></li>
+                        <li data-aos="fade-left" data-aos-duration="3000"><a href="BMW-M4_Competition.pdf" target="_blank">BMW M4 Competition</a></li>
+                        <li data-aos="fade-right" data-aos-duration="3000"><a href="Ferrari_812-Competizione_A_cfsO5iC.pdf" target="_blank">Ferrari 812 Competizione</a></li>
+                        <li data-aos="fade-left" data-aos-duration="3000"><a href="Ferrari_Daytona .pdf" target="_blank">Ferrari Daytona</a></li>
+                        <li data-aos="fade-right" data-aos-duration="3000"><a href="Ferrari_Purosangue.pdf" target="_blank">Ferrari Purosangue</a></li>
+                        <li data-aos="fade-left" data-aos-duration="3000"><a href="Ferrari-SF90_Spider_Y4fnXCo.pdf" target="_blank">Ferrari SF90 Spider</a></li>
+                        <li data-aos="fade-right" data-aos-duration="3000"><a href="Lamborghini_Huracan_EVO_Spyder.pdf" target="_blank">Lamborghini Huracan EVO Spyder</a></li>
+                        <li data-aos="fade-left" data-aos-duration="3000"><a href="Lamborghini_Revuelto.pdf" target="_blank">Lamborghini Revuelto</a></li>
+                        <li data-aos="fade-right" data-aos-duration="3000"><a href="Lamborghini_Temerario.pdf" target="_blank">Lamborghini Temerario</a></li>
+                        <li data-aos="fade-left" data-aos-duration="3000"><a href="Lamborghini_Urus.pdf" target="_blank">Lamborghini Urus S</a></li>
+                        <li data-aos="fade-right" data-aos-duration="3000"><a href="Maserati__MC20_Cielo.pdf" target="_blank">Maserati MC20 Cielo</a></li>
+                        <li data-aos="fade-left" data-aos-duration="3000"><a href="Maserati_Gran-Cabrio_Trofeo.pdf" target="_blank">Maserati Gran Cabrio Trofeo</a></li>
+                        <li data-aos="fade-right" data-aos-duration="3000"><a href="Maserati_GranTurismo.pdf" target="_blank">Maserati GranTurismo</a></li>
+                        <li data-aos="fade-left" data-aos-duration="3000"><a href="Maserati_GT2_Stradale.pdf" target="_blank">Maserati GT2 Stradale</a></li>
+                        <li data-aos="fade-right" data-aos-duration="3000"><a href="Mercedes_AMG-SL_63.pdf" target="_blank">Mercedes AMG SL63</a></li>
+                        <li data-aos="fade-left" data-aos-duration="3000"><a href="Mercedes-AMG_GT_4-Door_63.pdf" target="_blank">Mercedes AMG GT 4Door</a></li>
+                        <li data-aos="fade-right" data-aos-duration="3000"><a href="Mercedes-AMG_GT_63_PRO_4MATIC+.pdf" target="_blank">Mercedes AMG GT63 PRO</a></li>
+                        <li data-aos="fade-left" data-aos-duration="3000"><a href="Mercedes-AMG_S_63_E_Performance.pdf" target="_blank">Mercedes AMG S63 E Performance</a></li>
+                        <li data-aos="fade-right" data-aos-duration="3000"><a href="Porsche_718_Cayman_GT4-RS.pdf" target="_blank">Porsche 718 Cayman GT4 RS</a></li>
+                        <li data-aos="fade-left" data-aos-duration="3000"><a href="Porsche_718_Spyder_RS.pdf" target="_blank">Porsche 718 Spyder RS</a></li>
+                        <li data-aos="fade-right" data-aos-duration="3000"><a href="Porsche_911_Carrera_Cabriolet.pdf" target="_blank">Porsche 911 Carrera Cabriolet</a></li>
+                        <li data-aos="fade-left" data-aos-duration="3000"><a href="Porsche_Cayenne_Turbo-E-Hybrid-Coupe_GT.pdf" target="_blank">Porsche Cayenne Coupe GT</a></li>
+                        <li data-aos="fade-right" data-aos-duration="3000"><a href="Range-Rover_Autobiography | Empattement_Long.pdf" target="_blank">Range Rover</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </div>
+</section>
 
-        <div class="icons" style="letter-spacing: 6cm;">
+<!-- Equipment Section -->
+<section class="content-section" id="equipment">
+    <h2 class="section-title" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">
+        Equipment
+    </h2>
+    <div class="section-container" id="misc-container">
+        <video autoplay loop muted playsinline class="section-background-video">
+            <source src="BMW BGV.MP4" type="video/mp4">
+        </video>
+        <ul class="misc-list">
+            <li data-aos="fade-left" data-aos-duration="3000" style="--item-index: 5;">
+                Every participant receives a
+                <a href="https://www.samsung.com/fr/computers/galaxy-book/galaxy-book4-pro360/buy/" target="_blank">laptop</a>,  
+                <a href="https://www.apple.com/fr/shop/buy-ipad/ipad-pro" target="_blank">tablet</a>,  
+                <a href="https://www.samsung.com/fr/smartphones/galaxy-s24-ultra/buy/" target="_blank">smartphone</a>, and
+                <a href="https://www.bowerswilkins.com/fr-fr/product/over-ear-headphones/px8/FP42951P.html" target="_blank">headphones</a>, with accompanying accessories for entertainment.
+            </li>
+            <li data-aos="fade-left" data-aos-duration="3000" style="--item-index: 1;">
+                Everyone will get a radio (walkie-talkies) for seamless communication betweenn cars.
+            </li>
+            <li data-aos="fade-right" data-aos-duration="3000" style="--item-index: 2;">
+                Each vehicle will be eauiped with a specific itinerary, makinng sure everyone stays on track. 
+            </li>
+            <li data-aos="fade-left" data-aos-duration="3000" style="--item-index: 3;">
+                Each vehicle will be equipped with an emergency kit for safety.
+            </li>
+            <li data-aos="fade-right" data-aos-duration="3000" style="--item-index: 4;">
+                all cars will be .
+            </li>
+            <li data-aos="fade-left" data-aos-duration="3000" style="--item-index: 5;">
+                Each vehicle will be equipped with 3 or more pillows. 
+            </li>
+            <li data-aos="fade-right" data-aos-duration="3000" style="--item-index: 6;">
+                Each vehicle will be equipped .
+            </li>
+            <li data-aos="fade-left" data-aos-duration="3000" style="--item-index: 7;">
+                Each vehicle will be equipped with an emergency kit for safety.
+            </li>
+        </ul>
+    </div>
+</section>
 
-
-           <a href="https://www.instagram.com/c.mihai_16?igsh=c2Uwa2p1MXBicndv" style="color: black;" target="_blank" title="Open Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
-
-            <a href="https://x.com/CortacMihai_" style="color: black;" target="_blank" title="Open Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
-
-            <a href="https://discord.gg/PPJvvzErsy" style="color: black;" target="_blank" title="Open Discord"><ion-icon name="logo-discord"></ion-icon></a>
-
-            <a href="https://www.youtube.com/channel/UC137jjAf8IGM0rCujRfl26Q" style="color: black;" target="blank" title="Open YouTube" ><ion-icon name="logo-youtube"></ion-icon></a>
-
-
+    <!-- Bonuses Section -->
+    <section class="content-section" id="bonuses">
+        <h2 class="section-title" data-aos="fade" data-aos-easing="linear" data-aos-duration="1500">Bonuses</h2>
+        <div class="section-container" id="rewards-container">
+            <video autoplay loop muted playsinline class="section-background-video">
+                <source src="Bentley Continental GT V8 BGV.MP4" type="video/mp4">
+            </video>
+            <div class="rewards-details">
+                <h3 class="rewards-subtitle" data-aos="fade-right" data-aos-duration="3000">For Mihai</h3>
+                <ul class="rewards-list" data-aos="zoom-in" data-aos-duration="3000">
+                    <li><a href="https://www.motionrc.com/products/bancroft-alpha-yellow-brushless-950mm-37-4-extreme-deep-v-racer-rtr-bnc1040-002" target="_blank">Alpha Brushless</a></li>
+                    <li><a href="https://www.motionrc.com/products/chasing-m2-professional-submersible-rov-with-4k-video-rtr-chs40-10-202-0001" target="_blank">M2 Professional Submersible ROV</a></li>
+                    <li><a href="https://shop.directdrive.com/products/tita" target="_blank">TITA</a></li>
+                    <li><a href="https://eu.spyra.com/collections/all#blasters" target="_blank">Spyra</a></li>
+                    <li><a href="https://www.blasterparts.com/en/c/product-categories/nerf-dartblaster/nerf-blaster?atype%5B%5D=Rifle" target="_blank">Nerf Blaster</a></li>
+                </ul>
+                <h3 class="rewards-subtitle" data-aos="fade-right" data-aos-duration="3000">For Meryam</h3>
+                <ul class="rewards-list" data-aos="zoom-in" data-aos-duration="3000">
+                    <li><a href="https://clubllondon.com/products/carlotta-black-bardot-maxi-dress-with-chiffon-cape-cl131000002" target="_blank">Black Bardot Maxi Dress With Chiffon Cape</a></li>
+                    <li><a href="https://www.amazon.ca/Deceny-CB-Party-Gloves-Shirred/dp/B01N34RSYF?th=1&psc=1" target="_blank">Deceny CB Party Gloves</a></li>
+                    <li><a href="https://www.ysl.com/fr-fr/sacs-porte-epaule/kate-medium-reversible-en-suede-5538040UD7W1000.html" target="_blank">Kate Medium Reversible In Suede</a></li>
+                    <li><a href="https://www.ysl.com/en-en/sandals/opyum-sandals-in-patent-leather-5576620NPKK1000.html" target="_blank">Opyum Sandals In Patent Leather</a></li>
+                </ul>
+                <h3 class="rewards-subtitle" data-aos="fade-left" data-aos-duration="3000">For DD</h3>
+                <ul class="rewards-list" data-aos="zoom-in" data-aos-duration="3000">
+                    <li>Paper</li>
+                    <li>Custom-made “Horten 229” from <a href="https://www.motionrc.com/" target="_blank">Motion RC</a></li>
+                </ul>
+            </div>
         </div>
+    </section>
 
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-           AOS.init();
-        </script>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/c.mihai16" target="_blank" title="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://x.com/CortacMihai_" target="_blank" title="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://discord.gg/8ucymnhrP7" target="_blank" title="Discord"><ion-icon name="logo-discord"></ion-icon></a>
+            <a href="https://www.youtube.com/channel/UC137jjAf8IGM0rCujRfl26Q" target="_blank" title="YouTube"><ion-icon name="logo-youtube"></ion-icon></a>
+        </div>
+        <button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Top</button>
+    </footer>
 
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    </body>
+    <!-- Scripts -->
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
