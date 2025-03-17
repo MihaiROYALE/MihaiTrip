@@ -1,1135 +1,964 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', 'sans-serif';
-    box-sizing: border-box;
+/* Reset default styles */
+* {
+    margin: 0; /* Removes default margins */
+    padding: 0; /* Removes default padding */
+    font-family: 'Poppins', 'sans-serif'; /* Sets default font */
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
 }
 
-a:link {
-    color: burlywood
-  }
-  
-  a:visited {
-    color: burlywood
-  }
-  
-  a:hover {
-    color: bisque
-  }
-  
-  a:active {
-    color: red;
-  }
-  
-  a:link, a:visited {
-    text-decoration: none;
-  }
-
-  .title-bg {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: rgba(0,0,0,0.8);
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
+/* Base Body Style */
+body {
+    background-color: #a86f02; /* Sets deep gold background */
+    font-size: 16px; /* Base font size for readability */
+    line-height: 1.6; /* Comfortable line spacing */
+    color: #f2f2f2; /* Light gray text color */
+    width: 100vw; /* Full viewport width */
+    min-height: 100vh; /* Minimum full viewport height */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    position: relative; /* Allows absolute positioning of children */
 }
 
-.t-bg {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
+/* Link styles */
+a {
+    color: #d6a90d; /* Bright gold link color */
+    text-decoration: none; /* Removes underline from links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+a:visited {
+    color: #d6a90d; /* Maintains bright gold for visited links */
+}
+a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+a:active {
+    color: #8c5a00; /* Burnt gold when link is clicked */
 }
 
-.title-mrt {
-    color: burlywood;
-    font-size: 1.4vw;
-    text-align: center;
-    letter-spacing: 0.3cm;
+/* Navigation + Header */
+.site-header .main-navigation {
+    position: fixed; /* Fixes navigation to top */
+    top: 0; /* Aligns to top of viewport */
+    left: 0; /* Aligns to left of viewport */
+    width: 100vw; /* Full viewport width */
+    background: rgba(168, 111, 2, 0.9); /* Deep gold with transparency */
+    padding: 15px 0; /* Vertical padding */
+    z-index: 1000; /* Ensures nav stays above other content */
 }
 
-hr {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: 1cm;
-    margin-right: 1cm;
-    width: auto;
-    height: 0.1vw;
-    background-color: rgb(255, 255, 255);
-    border: none;
+.main-navigation .nav-list {
+    display: flex; /* Horizontal layout for nav items */
+    justify-content: center; /* Centers nav items */
+    list-style: none; /* Removes default list bullets */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
 }
 
-.title-i p {
-    color: bisque;
-    font-size: 13px;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    letter-spacing: 0.03cm;
+.nav-list li {
+    margin: 0 20px; /* Horizontal spacing between nav items */
 }
 
-.map-m {
-    text-align: center;
-    align-items: center;
-    font-size: 25px;
-    background-color: rgba(255, 228, 196, 0.8);
-    color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px rgba(255, 227, 194, 1);
+.nav-list a {
+    font-size: 1.1rem; /* Slightly larger font for nav links */
+    color: #d6a90d; /* Bright gold link color */
+    transition: color 0.3s; /* Smooth color transition on hover */
 }
 
-.map-bg {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: rgba(0,0,0,0.8);
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
+.nav-list li:hover {
+    transform: scale(1.1); /* Slight scale up on hover */
 }
 
-.ma-bg {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
+.nav-list a:hover {
+    color: #f2f2f2; /* Light gray on hover */
 }
 
-.map-i {
-    text-align: center;
-    padding: 100px 0;
+/* Hero Section */
+.hero-section {
+    display: flex; /* Flex layout for centering */
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    text-align: center; /* Centers text */
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    position: relative; /* For absolute children */
+    overflow: hidden; /* Hides overflow */
+    min-height: 100vh; /* Full viewport height */
+    color: #f2f2f2; /* Light gray text */
 }
 
-.members-mju {
-    text-align: center;
-    align-items: center;
-    font-size: 25px;
-    background-color: rgba(255, 228, 196, 0.8);
-    color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px  rgba(255, 228, 196, 1);
+.hero-background-video {
+    position: absolute; /* Positions behind content */
+    z-index: -1; /* Behind content */
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Exact centering */
+    min-width: 100%; /* Ensures full coverage */
+    min-height: 100%; /* Ensures full coverage */
+    object-fit: cover; /* Scales video properly */
 }
 
-.members-bg {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: rgba(0,0,0,0.8);
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
+.hero-content {
+    padding: 2rem; /* Internal spacing */
+    max-width: 90%; /* Limits width */
+    margin: 0 auto; /* Centers horizontally */
 }
 
-.m-bg {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
+.title-container {
+    display: flex; /* Flex layout for title and lines */
+    align-items: center; /* Vertically aligns items */
+    justify-content: center; /* Horizontally centers */
+    width: 100%; /* Full width */
+    margin-bottom: 2rem; /* Space below */
 }
 
-.members-i {
-    text-align: center;
-    padding: 100px 0;
+.hero-title {
+    color: #d6a90d; /* Bright gold color */
+    font-size: 2.5vw; /* Scales with viewport width */
+    letter-spacing: 0.3cm; /* Wide letter spacing */
+    padding: 0 2rem; /* Horizontal padding */
 }
 
-.members-i table {
-    background-color: rgba(0, 0, 0, 0.412);
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 75vh;
-    height: 55vh;
-    border-collapse: collapse;
+.side-line {
+    height: 0.1vw; /* Thin line, scales with viewport */
+    background-color: #f2f2f2; /* Light gray color */
+    opacity: 0.5; /* Semi-transparent */
+    flex-grow: 1; /* Expands to fill space */
+    max-width: 50%; /* Limits width */
 }
 
-.members-t table {
-    background-color: rgba(0, 0, 0, 0.412);
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 75vh;
-    height: 5vh;
-    border-collapse: collapse;
-    padding: 100vh;
+.left-line {
+    margin-right: 1rem; /* Space to right */
+}
+.right-line {
+    margin-left: 1rem; /* Space to left */
 }
 
-.drivers-dnp {
-    text-align: center;
-    align-items: center;
-    font-size: 25px;
-    background-color: rgba(255, 228, 196, 0.8);
-    color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+.introduction {
+    max-height: 80vh; /* Limits height with scroll */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding: 1rem; /* Internal spacing */
 }
 
-.drivers-bg {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: rgba(0,0,0,0.8);
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
+.introduction p {
+    color: #f2f1d5; /* Creamy gold text */
+    font-size: 1.1rem; /* Readable size */
+    letter-spacing: 0.05cm; /* Slight letter spacing */
+    line-height: 1.8; /* Comfortable line spacing */
+    margin: 1rem 0; /* Vertical spacing */
 }
 
-.d-bg {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
+.intro-closing {
+    font-size: 1.2rem; /* Slightly larger text */
+    font-style: italic; /* Italicized */
+    margin-top: 1.5rem; /* Space above */
 }
 
-.drivers-i {
-    text-align: center;
-    padding: 100px 0;
+/* General Section Styles */
+.content-section .section-title {
+    text-align: center; /* Centers text */
+    letter-spacing: 4px; /* Wide letter spacing */
+    font-size: 25px; /* Large title */
+    background-color: rgba(242, 241, 213, 0.8); /* Creamy gold background */
+    color: #a86f02; /* Deep gold text */
+    box-shadow: 4px 7px 15px rgba(214, 169, 13, 1); /* Bright gold shadow */
+    padding: 0.5rem; /* Internal spacing */
 }
 
-.drivers-i table {
-    background-color: rgba(0, 0, 0, 0.412);
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 75vh;
-    height: 55vh;
-    border-collapse: collapse;
-    align-items: center;
+.section-container {
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center; /* Centers text */
+    padding: 100px 0; /* Large vertical padding */
+    position: relative; /* For absolute children */
+    overflow: hidden; /* Hides overflow */
+    min-height: 100vh; /* Full viewport height */
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    color: #f2f2f2; /* Light gray text */
+    width: 100%; /* Full width */
 }
 
-.assistance-anfm {
-    text-align: center;
-    align-items: center;
-    font-size: 25px;
-    background-color: rgba(255, 228, 196, 0.8);
-    color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+.section-background-video {
+    position: absolute; /* Behind content */
+    z-index: -1; /* Behind content */
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Exact centering */
+    min-width: 100%; /* Full coverage */
+    min-height: 100%; /* Full coverage */
+    object-fit: cover; /* Scales video properly */
 }
 
-.assistance-bg {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: rgba(0,0,0,0.8);
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
+/* Map Section */
+#route-map .map-embed {
+    text-align: center; /* Centers content */
+    padding: 100px 0; /* Vertical padding */
 }
 
-.a-bg {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
+.map-embed iframe {
+    width: 100%; /* Full width */
+    height: 500px; /* Default height */
+    border: none; /* Removes border */
 }
 
-.assistance-s {
-    text-align: center;
-    color: bisque;
-    text-align: center;
-    padding: 20px 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-collapse: collapse;
-    font-size: 18px;
-    letter-spacing: 0.07cm;
+/* Participants Section */
+#participants .participants-table {
+    text-align: center; /* Centers content */
+    padding: 100px 0; /* Vertical padding */
 }
 
-.assistance-t {
-    margin-left: 25%;
-    color: bisque;
-    text-align: center;
-    padding: 15px 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-collapse: collapse;
-    font-size: 17px;
-    letter-spacing: 0.07cm;
+.participants-table .sortable-table {
+    background-color: rgba(168, 111, 2, 0.412); /* Deep gold with transparency */
+    margin: 0 auto 15px; /* Centers with bottom margin */
+    text-align: center; /* Centers text */
+    width: 75vh; /* Width based on viewport height */
+    height: 55vh; /* Height based on viewport height */
+    border-collapse: collapse; /* Removes spacing between cells */
+    border: 3px solid #d6a90d; /* Bright gold border */
+    box-shadow: 0 0 6px #d6a90d; /* Bright gold glow */
 }
 
-.assistance-i {
-    margin-left: 28%;
-    color: beige;
-    text-align: center;
-    padding: 5px 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-collapse: collapse;
-    font-size: 15px;
+.participants-table th, .participants-table td {
+    color: #f2f2f2; /* Light gray text */
+    border: 1px solid; /* Thin border */
 }
 
-.assistance-e {
-    text-align: center;
-    font-size: 18px;
-    color: bisque;
-    text-align: center;
-    padding: 35px 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-collapse: collapse;
-    letter-spacing: 0.04cm;
+.total-count table {
+    background-color: rgba(168, 111, 2, 0.412); /* Deep gold with transparency */
+    margin: 0 auto; /* Centers table */
+    text-align: center; /* Centers text */
+    width: 75vh; /* Width based on viewport height */
+    height: 5vh; /* Short height */
+    border-collapse: collapse; /* Removes spacing between cells */
+    border: 3px solid #d6a90d; /* Bright gold border */
+    box-shadow: 0 0 6px #d6a90d; /* Bright gold glow */
 }
 
-.guidelines-g {
-    text-align: center;
-    align-items: center;
-    font-size: 25px;
-    background-color: rgba(255, 228, 196, 0.8);
-    color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+.total-count th, .total-count td {
+    color: #f2f2f2; /* Light gray text */
+    border: 1px solid; /* Thin border */
 }
 
-.guidelines-bg {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: rgba(0,0,0,0.8);
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
+/* Drivers Section */
+#drivers-passengers .drivers-table {
+    text-align: center; /* Centers content */
+    padding: 100px 0; /* Vertical padding */
 }
 
-.g-bg {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
+.drivers-table table {
+    background-color: rgba(168, 111, 2, 0.412); /* Deep gold with transparency */
+    margin: 0 auto; /* Centers table */
+    text-align: center; /* Centers text */
+    width: 75vh; /* Width based on viewport height */
+    height: 55vh; /* Height based on viewport height */
+    border-collapse: collapse; /* Removes spacing between cells */
+    border: 6px solid #d6a90d; /* Thicker bright gold border */
+    box-shadow: 0 0 16px #d6a90d; /* Larger bright gold glow */
 }
 
-.guidelines-i {
-    text-align: center;
-    color: bisque;
-    text-align: center;
-    padding: 100px 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-collapse: collapse;
-    font-size: 18px;
-    letter-spacing: 0.09cm;
+.drivers-table th, .drivers-table td {
+    color: #f2f2f2; /* Light gray text */
+    border: 1px solid; /* Thin border */
 }
 
-.vehicules-rtv {
-    text-align: center;
-    align-items: center;
-    font-size: 25px;
-    background-color: rgba(255, 228, 196, 0.8);
-    color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+/* Support Crew Section */
+#crew .support-details {
+    text-align: center; /* Centers content */
+    max-width: 70%; /* Limits width */
+    margin: 0 auto; /* Centers horizontally */
+    border: none; /* No border */
 }
 
-.vehicules-bg {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: rgba(0,0,0,0.7);
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
+.support-overview {
+    color: #f2f1d5; /* Creamy gold text */
+    font-size: 1.2rem; /* Readable size */
+    padding: 20px 0; /* Vertical padding */
+    letter-spacing: 0.05cm; /* Slight letter spacing */
+    background: linear-gradient(to right, rgba(242, 241, 213, 0.15), rgba(242, 241, 213, 0)); /* Creamy gold gradient */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 1.5rem; /* Space below */
+    border-top: none; /* No top border */
 }
 
-.v-bg {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
+.support-overview {
+    animation: fadeIn 1s ease-in-out; /* Fade in animation */
 }
 
-.vehicules-i h4 {
-    text-align: center;
-    color: bisque;
-    text-align: center;
-    padding: 5px 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-collapse: collapse;
-    font-size: 25px;
+.support-list {
+    list-style: none; /* Removes bullets */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
 }
 
-.vehicules-i h5 {
-    text-align: center;
-    color: bisque;
-    text-align: center;
-    padding: 16px 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-collapse: collapse;
-    font-size: 13px;
+.support-list li {
+    color: #f2f1d5; /* Creamy gold text */
+    font-size: 1.1rem; /* Readable size */
+    padding: 20px 0; /* Vertical padding */
+    letter-spacing: 0.05cm; /* Slight letter spacing */
+    border-bottom: 1px solid rgba(242, 241, 213, 0.3); /* Creamy gold separator */
 }
 
-.others-o {
-    text-align: center;
-    align-items: center;
-    font-size: 25px;
-    background-color: rgba(255, 228, 196, 0.8);
-    color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+.support-list li:last-child {
+    border-bottom: none; /* No border on last item */
 }
 
-.others-bg {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: rgba(0,0,0,0.7);
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
+.support-list li strong {
+    display: inline-block; /* Inline block for spacing */
+    margin-right: 0.5rem; /* Space to right */
 }
 
-.o-bg {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
+.support-list li a {
+    color: #d6a90d; /* Bright gold link color */
 }
 
-.others-i {
-    text-align: center;
-    padding: 100px 0;
+.support-list .role-description {
+    display: block; /* Block for new line */
+    font-size: 0.9rem; /* Smaller text */
+    color: rgba(242, 241, 213, 0.8); /* Creamy gold with opacity */
+    margin-top: 0.5rem; /* Space above */
+    letter-spacing: 0.03cm; /* Slight letter spacing */
 }
 
-
-.others-i h5  {
-    text-align: center;
-    color: bisque;
-    text-align: center;
-    padding: 100px 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-collapse: collapse;
-    font-size: 16px;
-    letter-spacing: 0.07cm;
+.support-summary {
+    color: #f2f1d5; /* Creamy gold text */
+    font-size: 1.2rem; /* Readable size */
+    padding: 20px 0; /* Vertical padding */
+    letter-spacing: 0.05cm; /* Slight letter spacing */
+    background: linear-gradient(to right, rgba(242, 241, 213, 0), rgba(242, 241, 213, 0.15)); /* Creamy gold gradient */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 1.5rem; /* Space below */
+    border-top: none; /* No top border */
 }
 
-.extras-e {
-    text-align: center;
-    align-items: center;
-    font-size: 25px;
-    background-color: rgba(255, 228, 196, 0.8);
-    color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+/* Trip Rules Section */
+#rules .section-container {
+    position: relative; /* For absolute children */
+    overflow: hidden; /* Hides overflow */
+    padding: 40px 0; /* Vertical padding */
 }
 
-.extras-bg {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: rgba(0,0,0,0.8);
-    padding: 200px 0;
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
+#rules .rules-list {
+    text-align: center; /* Centers text */
+    color: #f2f1d5; /* Creamy gold text */
+    padding: 50px 0; /* Vertical padding */
+    font-size: 1rem; /* Base font size */
+    letter-spacing: 0.05cm; /* Slight letter spacing */
+    list-style: none; /* Removes bullets */
+    max-width: 70%; /* Limits width */
+    margin: 0 auto; /* Centers horizontally */
+    overflow: visible; /* Allows hover effects */
 }
 
-.e-bg {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
+.rules-list li {
+    padding: 8px 0; /* Vertical padding */
+    position: relative; /* For hover effects */
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth transitions */
+    background: linear-gradient(to right, rgba(242, 241, 213, 0.05), rgba(242, 241, 213, 0.05)); /* Subtle gradient */
+    border-radius: 8px; /* Rounded corners */
+    margin: 6px 0; /* Vertical spacing */
+    font-size: 0.9rem; /* Slightly smaller text */
 }
 
-.extras-i {
-    text-align: center;
-    padding: 100px 0;
+.rules-list li:hover {
+    transform: translateX(10px); /* Shifts right on hover */
+    background: linear-gradient(to right, rgba(242, 241, 213, 0.15), rgba(242, 241, 213, 0)); /* Stronger gradient */
 }
 
-
-.extras-i h4 {
-    text-align: center;
-    color: bisque;
-    text-align: center;
-    padding: 20px 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-collapse: collapse;
-    font-size: 18px;
-    letter-spacing: 0.09cm;
+.rules-overview {
+    color: #f2f1d5; /* Creamy gold text */
+    font-size: 1.3rem; /* Larger text */
+    padding: 30px 0; /* Vertical padding */
+    letter-spacing: 0.06cm; /* Wider letter spacing */
+    font-weight: 600; /* Bold text */
+    text-transform: uppercase; /* All caps */
+    position: relative; /* For pseudo-element */
+    max-width: 70%; /* Limits width */
+    margin: 0 auto 40px; /* Centers with bottom margin */
+    background: linear-gradient(to right, rgba(242, 241, 213, 0.15), rgba(242, 241, 213, 0)); /* Creamy gold gradient */
+    border-radius: 8px; /* Rounded corners */
+    animation: fadeIn 1s ease-in-out; /* Fade in animation */
 }
 
-.bonuses-b {
-    text-align: center;
-    align-items: center;
-    font-size: 25px;
-    background-color: rgba(255, 228, 196, 0.8);
-    color: rgb(0, 0, 0);
-    box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+.rules-overview::after {
+    content: ''; /* Empty content */
+    position: absolute; /* Positions below text */
+    width: 100px; /* Fixed width */
+    height: 3px; /* Thin line */
+    bottom: -15px; /* Below text */
+    left: 50%; /* Centers horizontally */
+    transform: translateX(-50%); /* Exact centering */
+    border-radius: 2px; /* Slightly rounded */
 }
 
-.bonuses-bg {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: rgba(0,0,0,0.8);
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh;
+.rules-summary {
+    color: #f2f1d5; /* Creamy gold text */
+    font-size: 1.2rem; /* Readable size */
+    padding: 30px 20px; /* Vertical and horizontal padding */
+    letter-spacing: 0.05cm; /* Slight letter spacing */
+    font-style: italic; /* Italicized */
+    font-weight: 500; /* Medium bold */
+    max-width: 70%; /* Limits width */
+    margin: 40px auto 0; /* Centers with top margin */
+    position: relative; /* For pseudo-element */
+    background: linear-gradient(to right, rgba(242, 241, 213, 0), rgba(242, 241, 213, 0.15)); /* Creamy gold gradient */
+    border-radius: 8px; /* Rounded corners */
+    animation: fadeInUp 1s ease-in-out; /* Fade in with slide */
 }
 
-.b-bg {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
+.rules-summary::before {
+    content: ''; /* Empty content */
+    position: absolute; /* Full coverage */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    z-index: -1; /* Behind text */
+    top: 0; /* Aligns to top */
+    left: 0; /* Aligns to left */
+    border-radius: 8px; /* Matches container */
 }
 
-.bonuses-i {
-    text-align: center;
-    padding: 100px 0;
+.rules-list span {
+    color: #8c5a00; /* Burnt gold for emphasis */
+    font-weight: 600; /* Bold text */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
-.bonuses-i h4 {
-    text-align: center;
-    color: bisque;
-    text-align: center;
-    padding: 10px 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-collapse: collapse;
-    font-size: 25px;
+.rules-list span:hover {
+    color: #a86f02; /* Deep gold on hover */
 }
 
-.bonuses-i p {
-    text-align: center;
-    color: #ffe4c4;
-    text-align: center;
-    padding: 10px 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-collapse: collapse;
-    font-size: 18px
-
+/* Keyframe animations */
+@keyframes fadeIn {
+    from { opacity: 0; } /* Start transparent */
+    to { opacity: 1; } /* End fully visible */
 }
 
-.icons {
-    text-align: center;
-    align-items: center;
-    letter-spacing: 4cm;
-    font-size: 28px;
-    background-image: linear-gradient(to right, burlywood, black);
-    box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); } /* Start transparent and below */
+    to { opacity: 1; transform: translateY(0); } /* End visible and in place */
 }
 
-.map {
-    text-align: center;
-    color: bisque;
-    text-align: center;
-    padding: 20px 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-collapse: collapse;
+/* Fleet Section */
+#fleet .fleet-details {
+    text-align: center; /* Centers content */
+    position: relative; /* For pseudo-elements */
 }
 
+.fleet-subtitle {
+    color: #f2f1d5; /* Creamy gold text */
+    padding: 5px 0; /* Vertical padding */
+    font-size: 25px; /* Large text */
+    text-shadow: 0 0 1.8px #f2f2f2; /* Light gray shadow */
+    position: relative; /* For pseudo-elements */
+    display: inline-block; /* Allows pseudo-elements */
+}
 
+.fleet-subtitle::before, .fleet-subtitle::after {
+    content: ""; /* Empty content */
+    position: absolute; /* Positions lines */
+    top: 50%; /* Centers vertically */
+    width: 100px; /* Line width */
+    height: 1px; /* Thin line */
+    background-color: #f2f1d5; /* Creamy gold color */
+}
 
+.fleet-subtitle::before {
+    left: -120px; /* Positions left line */
+}
 
+.fleet-subtitle::after {
+    right: -120px; /* Positions right line */
+}
 
+.fleet-list {
+    text-align: center; /* Centers text */
+    color: #f2f1d5; /* Creamy gold text */
+    padding: 16px 0; /* Vertical padding */
+    font-size: 13px; /* Smaller text */
+    list-style: none; /* Removes bullets */
+    margin: 0; /* No margin */
+}
 
+/* Collapsible Section */
+.collapsible-section {
+    margin: 20px 0; /* Vertical spacing */
+    text-align: center; /* Centers content */
+}
 
+.collapsible-btn {
+    background: rgba(242, 241, 213, 0.1); /* Creamy gold with transparency */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgba(242, 241, 213, 0.3); /* Creamy gold border */
+    color: #f2f1d5; /* Creamy gold text */
+    font-size: 25px; /* Large text */
+    padding: 10px 20px; /* Internal spacing */
+    cursor: pointer; /* Hand cursor */
+    width: 100%; /* Full width */
+    max-width: 300px; /* Limits width */
+    text-align: center; /* Centers text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(168, 111, 2, 0.2); /* Deep gold shadow */
+    text-shadow: 0 0 1.8px #f2f2f2; /* Light gray shadow */
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
 
+.collapsible-btn:hover {
+    background: rgba(242, 241, 213, 0.2); /* Stronger background on hover */
+    transform: scale(1.05); /* Slight scale up */
+}
 
+.collapsible-content {
+    max-height: 0; /* Hidden by default */
+    overflow: hidden; /* Hides content */
+    transition: max-height 0.5s ease-out; /* Smooth expansion */
+    padding: 0 20px; /* Horizontal padding when closed */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centers text */
+}
 
+.collapsible-content.active {
+    max-height: 600px; /* Maximum height when open */
+    padding: 20px; /* Full padding when open */
+}
 
+/* Equipment Section */
+#equipment .misc-list {
+    list-style: none; /* Removes bullets */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
 
+#equipment .misc-list li {
+    color: #f2f1d5; /* Creamy gold text */
+    font-size: 1.1rem; /* Readable size */
+    padding: 20px 0; /* Vertical padding */
+    border-bottom: 1px solid rgba(242, 241, 213, 0.3); /* Creamy gold separator */
+}
 
+#equipment .misc-list li:last-child {
+    border-bottom: none; /* No border on last item */
+}
 
+#equipment .misc-list li strong {
+    display: inline-block; /* Inline block for spacing */
+    margin-right: 0.5rem; /* Space to right */
+}
 
+#equipment .misc-list a {
+    color: #d6a90d; /* Bright gold link color */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
 
+#equipment .misc-list .misc-description {
+    display: block; /* Block for new line */
+    font-size: 0.9rem; /* Smaller text */
+    color: rgba(242, 241, 213, 0.8); /* Creamy gold with opacity */
+    margin-top: 0.5rem; /* Space above */
+    letter-spacing: 0.03cm; /* Slight letter spacing */
+}
 
+#equipment .misc-summary {
+    color: #f2f1d5; /* Creamy gold text */
+    font-size: 1.2rem; /* Readable size */
+    padding: 20px 0; /* Vertical padding */
+    letter-spacing: 0.05cm; /* Slight letter spacing */
+    background: linear-gradient(to right, rgba(242, 241, 213, 0), rgba(242, 241, 213, 0.15)); /* Creamy gold gradient */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 1.5rem; /* Space below */
+    border-top: none; /* No top border */
+}
 
-@media only screen and (max-width: 768px) {
-    /* Modify font sizes and paddings for smaller screens */
-    
-      .title-bg {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgba(0,0,0,0.8);
-        position: relative;
-        overflow: hidden;
-        min-height: 100vh;
+#equipment a {
+    color: #d6a90d; /* Bright gold link color */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+#equipment a:visited {
+    color: #d6a90d; /* Bright gold for visited links */
+}
+#equipment a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+#equipment a:active {
+    color: #8c5a00; /* Burnt gold when clicked */
+}
+
+/* Special Rewards Section */
+#bonuses .rewards-details {
+    text-align: center; /* Centers content */
+    max-width: 70%; /* Limits width */
+    margin: 0 auto; /* Centers horizontally */
+    border: none; /* No border */
+    padding: 100px 0; /* Vertical padding */
+}
+
+.rewards-subtitle {
+    color: #f2f1d5; /* Creamy gold text */
+    font-size: 1.2rem; /* Readable size */
+    padding: 20px 0; /* Vertical padding */
+    letter-spacing: 0.05cm; /* Slight letter spacing */
+    background: linear-gradient(to right, rgba(242, 241, 213, 0.15), rgba(242, 241, 213, 0)); /* Creamy gold gradient */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 1.5rem; /* Space below */
+    border-top: none; /* No top border */
+}
+
+.rewards-list {
+    list-style: none; /* Removes bullets */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
+
+.rewards-list li {
+    color: #f2f1d5; /* Creamy gold text */
+    font-size: 1.1rem; /* Readable size */
+    padding: 20px 0; /* Vertical padding */
+    letter-spacing: 0.05cm; /* Slight letter spacing */
+    border-bottom: 1px solid rgba(242, 241, 213, 0.3); /* Creamy gold separator */
+}
+
+.rewards-list li:last-child {
+    border-bottom: none; /* No border on last item */
+}
+
+.rewards-list li strong {
+    display: inline-block; /* Inline block for spacing */
+    margin-right: 0.5rem; /* Space to right */
+}
+
+.rewards-list li a {
+    color: #d6a90d; /* Bright gold link color */
+}
+
+/* Footer */
+.site-footer {
+    position: absolute; /* Positions at bottom */
+    bottom: 0; /* Aligns to bottom */
+}
+
+.social-icons {
+    background: linear-gradient(to right, #d6a90d, #a86f02); /* Gold gradient */
+    padding: 5px; /* Internal spacing */
+    display: flex; /* Flex layout */
+    justify-content: center; /* Centers icons */
+    align-items: center; /* Vertically aligns */
+    border-radius: 5px; /* Rounded corners */
+    width: 100vw; /* Full viewport width */
+    height: 50px; /* Fixed height */
+}
+
+.social-icons ion-icon {
+    font-size: 30px; /* Icon size */
+    padding: 10px; /* Internal spacing */
+    margin: 0 20px; /* Horizontal spacing */
+    color: #f2f2f2; /* Light gray color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-icons ion-icon:hover {
+    color: #f2f1d5; /* Creamy gold on hover */
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Distance from bottom */
+    right: 20px; /* Distance from right */
+    background: #d6a90d; /* Bright gold background */
+    color: #a86f02; /* Deep gold text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Internal spacing */
+    border-radius: 50%; /* Circular shape */
+    cursor: pointer; /* Hand cursor */
+    font-size: 1rem; /* Readable size */
+    z-index: 10; /* Above most content */
+    box-shadow: 2px 2px 5px rgba(168, 111, 2, 0.3); /* Deep gold shadow */
+}
+
+.scroll-to-top:hover {
+    background: #8c5a00; /* Burnt gold on hover */
+}
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .site-header .main-navigation {
+        padding: 10px 0; /* Reduced padding for mobile */
     }
-    
-    .t-bg {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
+
+    .main-navigation .nav-list {
+        flex-direction: row; /* Keeps horizontal layout */
+        flex-wrap: wrap; /* Allows wrapping if needed */
+        justify-content: center; /* Centers items */
+        padding: 5px 0; /* Slight padding */
     }
-    
-    .title-mrt {
-        color: burlywood;
-        font-size: 1vh;
-        text-align: center;
-        letter-spacing: 0.2cm;
+
+    .nav-list li {
+        margin: 5px 10px; /* Reduced spacing for mobile */
     }
-    
-    hr {
-        display: block;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-        margin-left: 1cm;
-        margin-right: 1cm;
-        width: auto;
-        height: 0.1vw;
-        background-color: rgb(255, 255, 255);
-        border: none;
+
+    .nav-list a {
+        font-size: 0.9rem; /* Smaller font for mobile */
+        color: #f2f1d5;
     }
-    
-    .title-i p {
-        color: bisque;
-        font-size: 10px;
-        text-align: center;
-        top: 50%;
-        left: 50%;
-        letter-spacing: 0.03cm;
+
+    /* Hero Section */
+    .hero-section {
+        min-height: 100vh; /* Slightly shorter */
     }
-    
-    .map-m {
-        text-align: center;
-        align-items: center;
-        font-size: 18px;
-        background-color: rgba(255, 228, 196, 0.8);
-        color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px rgba(255, 227, 194, 1);
+
+    .hero-content {
+        padding: 1rem; /* Reduced padding */
+        max-width: 95%; /* Slightly wider */
     }
-    
-    .map-bg {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgba(0,0,0,0.8);
-        padding: 100px 0;
-        position: relative;
-        overflow: hidden;
-        min-height: 100vh;
+
+    .hero-title {
+        font-size: 1.2rem; /* Fixed size for mobile */
+        letter-spacing: 0.05cm; /* Reduced spacing */
+        padding: 0 1rem; /* Reduced padding */
     }
-    
-    .ma-bg {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
+
+    .side-line {
+        height: 1px; /* Fixed height */
+        max-width: 30%; /* Shorter lines */
     }
-    
-    .map-i iframe {
-        height: 640px;
-        width: 340px;
+
+    .left-line {
+        margin-right: 0.5rem; /* Reduced margin */
     }
-    
-    .members-mju {
-        text-align: center;
-        align-items: center;
-        font-size: 18px;
-        background-color: rgba(255, 228, 196, 0.8);
-        color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px  rgba(255, 228, 196, 1);
+    .right-line {
+        margin-left: 0.5rem; /* Reduced margin */
     }
-    
-    .members-bg {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgba(0,0,0,0.8);
-        padding: 100px 0;
-        position: relative;
-        overflow: hidden;
-        min-height: 100vh;
+
+    .introduction {
+        max-height: 70vh; /* Slightly shorter */
+        padding: 0.5rem; /* Reduced padding */
     }
-    
-    .m-bg {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
+
+    .introduction p {
+        font-size: 0.85rem; /* Smaller text */
+        letter-spacing: 0.03cm; /* Reduced spacing */
+        line-height: 1.6; /* Adjusted spacing */
+        margin: 0.5rem 0; /* Reduced margin */
     }
-    
-    .members-i {
-        text-align: center;
-        padding: 100px 0;
+
+    .intro-closing {
+        font-size: 1rem; /* Smaller text */
+        margin-top: 1rem; /* Reduced margin */
     }
-    
-    .members-i table {
-        background-color: rgba(0, 0, 0, 0.412);
-        text-decoration: none;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        width: 40vh;
-        height: 55vh;
-        border-collapse: collapse;
+
+    /* General Section Styles */
+    .content-section .section-title {
+        font-size: 1rem; /* Smaller text */
+        letter-spacing: 2px; /* Reduced spacing */
+        padding: 0.5rem; /* Consistent padding */
+        box-shadow: 2px 4px 10px rgba(214, 169, 13, 1); /* Smaller shadow */
     }
-    
-    .members-t table {
-        background-color: rgba(0, 0, 0, 0.412);
-        text-decoration: none;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        width: 40vh;
-        height: 5vh;
-        border-collapse: collapse;
-        padding: 100vh;
+
+    .section-container {
+        padding: 30px 0; /* Reduced padding */
+        min-height: auto; /* No minimum height */
     }
-    
-    .drivers-dnp {
-        text-align: center;
-        align-items: center;
-        font-size: 18px;
-        background-color: rgba(255, 228, 196, 0.8);
-        color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+
+    /* Map Section */
+    #route-map .map-embed {
+        padding: 30px 0; /* Reduced padding */
     }
-    
-    .drivers-bg {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgba(0,0,0,0.8);
-        padding: 100px 0;
-        position: relative;
-        overflow: hidden;
-        min-height: 100vh;
+
+    .map-embed iframe {
+        width: 100%; /* Full width */
+        height: 300px; /* Smaller height for mobile */
     }
-    
-    .d-bg {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
+
+    /* Participants Section */
+    #participants .participants-table {
+        padding: 30px 0; /* Reduced padding */
     }
-    
-    .drivers-i {
-        text-align: center;
-        padding: 100px 0;
+
+    .participants-table .sortable-table {
+        width: 95vw; /* Full viewport width */
+        height: auto; /* Adapts to content */
+        margin: 0 auto 10px; /* Reduced bottom margin */
+        font-size: 0.75rem; /* Smaller text */
     }
-    
-    .drivers-i table {
-        background-color: rgba(0, 0, 0, 0.412);
-        text-decoration: none;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        width: 40vh;
-        height: 55vh;
-        border-collapse: collapse;
-        align-items: center;
+
+    .total-count table {
+        width: 95vw; /* Full viewport width */
+        height: auto; /* Adapts to content */
+        font-size: 0.75rem; /* Smaller text */
     }
-    
-    .assistance-anfm {
-        text-align: center;
-        align-items: center;
-        font-size: 18px;
-        background-color: rgba(255, 228, 196, 0.8);
-        color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+
+    /* Drivers Section */
+    #drivers-passengers .drivers-table {
+        padding: 30px 0; /* Reduced padding */
     }
-    
-    .assistance-bg {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgba(0,0,0,0.8);
-        padding: 100px 0;
-        position: relative;
-        overflow: hidden;
-        min-height: 100vh;
+
+    .drivers-table table {
+        width: 95vw; /* Full viewport width */
+        height: auto; /* Adapts to content */
+        margin: 0 auto 10px; /* Reduced bottom margin */
+        font-size: 0.75rem; /* Smaller text */
     }
-    
-    .a-bg {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
+
+    /* Support Crew */
+    #crew .support-details {
+        max-width: 90%; /* Wider for mobile */
+        padding: 20px 0; /* Reduced padding */
     }
-    
-    .assistance-s {
-        text-align: center;
-        color: bisque;
-        text-align: center;
-        padding: 20px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        font-size: 18px;
-        letter-spacing: 0.07cm;
+
+    .support-overview {
+        font-size: 1rem; /* Smaller text */
+        padding: 15px 0; /* Reduced padding */
     }
-    
-    .assistance-t {
-        margin-left: 25%;
-        color: bisque;
-        text-align: center;
-        padding: 15px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        font-size: 17px;
-        letter-spacing: 0.07cm;
+
+    .support-list li {
+        font-size: 0.9rem; /* Smaller text */
+        padding: 15px 0; /* Reduced padding */
     }
-    
-    .assistance-i {
-        margin-left: 28%;
-        color: beige;
-        text-align: center;
-        padding: 5px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        font-size: 15px;
+
+    .support-summary {
+        font-size: 1rem; /* Smaller text */
+        padding: 15px 0; /* Reduced padding */
     }
-    
-    .assistance-e {
-        text-align: center;
-        font-size: 18px;
-        color: bisque;
-        text-align: center;
-        padding: 35px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        letter-spacing: 0.04cm;
+
+    /* Trip Rules */
+    #rules .section-container {
+        padding: 20px 0; /* Reduced padding */
     }
-    
-    .guidelines-g {
-        text-align: center;
-        align-items: center;
-        font-size: 18px;
-        background-color: rgba(255, 228, 196, 0.8);
-        color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+
+    #rules .rules-list {
+        max-width: 90%; /* Wider for mobile */
+        padding: 20px 0; /* Reduced padding */
+        font-size: 0.8rem; /* Smaller text */
     }
-    
-    .guidelines-bg {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgba(0,0,0,0.8);
-        padding: 100px 0;
-        position: relative;
-        overflow: hidden;
-        min-height: 100vh;
+
+    .rules-overview {
+        font-size: 1.1rem; /* Smaller text */
+        padding: 20px 0; /* Reduced padding */
+        margin-bottom: 20px; /* Reduced margin */
     }
-    
-    .g-bg {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
+
+    .rules-list li {
+        padding: 6px 0; /* Reduced padding */
     }
-    
-    .guidelines-i {
-        text-align: center;
-        color: bisque;
-        text-align: center;
-        padding: 100px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        font-size: 18px;
-        letter-spacing: 0.09cm;
+
+    .rules-summary {
+        font-size: 1rem; /* Smaller text */
+        padding: 20px 10px; /* Reduced padding */
+        margin: 20px auto 0; /* Reduced margin */
     }
-    
-    .vehicules-rtv {
-        text-align: center;
-        align-items: center;
-        font-size: 18px;
-        background-color: rgba(255, 228, 196, 0.8);
-        color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+
+    /* Fleet */
+    .fleet-subtitle {
+        font-size: 1.1rem; /* Smaller text */
     }
-    
-    .vehicules-bg {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgba(0,0,0,0.7);
-        padding: 100px 0;
-        position: relative;
-        overflow: hidden;
-        min-height: 100vh;
+
+    .fleet-subtitle::before,
+    .fleet-subtitle::after {
+        width: 50px; /* Shorter lines */
     }
-    
-    .v-bg {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
+
+    .fleet-subtitle::before {
+        left: -60px; /* Adjusted position */
     }
-    
-    .vehicules-i h4 {
-        text-align: center;
-        color: bisque;
-        text-align: center;
-        padding: 5px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        font-size: 25px;
+    .fleet-subtitle::after {
+        right: -60px; /* Adjusted position */
     }
-    
-    .vehicules-i h5 {
-        text-align: center;
-        color: bisque;
-        text-align: center;
-        padding: 16px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        font-size: 13px;
+
+    .collapsible-btn {
+        font-size: 1.1rem; /* Smaller text */
+        max-width: 250px; /* Smaller max width */
+        padding: 8px 15px; /* Reduced padding */
     }
-    
-    .others-o {
-        text-align: center;
-        align-items: center;
-        font-size: 18px;
-        background-color: rgba(255, 228, 196, 0.8);
-        color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+
+    .collapsible-content.active {
+        max-height: 400px; /* Smaller max height */
+        padding: 15px; /* Reduced padding */
     }
-    
-    .others-bg {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgba(0,0,0,0.7);
-        padding: 100px 0;
-        position: relative;
-        overflow: hidden;
-        min-height: 100vh;
+
+    /* Equipment */
+    #equipment .misc-list li {
+        font-size: 0.9rem; /* Smaller text */
+        padding: 15px 0; /* Reduced padding */
     }
-    
-    .o-bg {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
+
+    #equipment .misc-summary {
+        font-size: 1rem; /* Smaller text */
+        padding: 15px 0; /* Reduced padding */
     }
-    
-    .others-i {
-        text-align: center;
-        padding: 100px 0;
+
+    /* Special Rewards */
+    #bonuses .rewards-details {
+        max-width: 90%; /* Wider for mobile */
+        padding: 30px 0; /* Reduced padding */
     }
-    
-    
-    .others-i h5  {
-        text-align: center;
-        color: bisque;
-        text-align: center;
-        padding: 100px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        font-size: 16px;
-        letter-spacing: 0.07cm;
+
+    .rewards-subtitle {
+        font-size: 1rem; /* Smaller text */
+        padding: 15px 0; /* Reduced padding */
     }
-    
-    .extras-e {
-        text-align: center;
-        align-items: center;
-        font-size: 18px;
-        background-color: rgba(255, 228, 196, 0.8);
-        color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+
+    .rewards-list li {
+        font-size: 0.9rem; /* Smaller text */
+        padding: 15px 0; /* Reduced padding */
     }
-    
-    .extras-bg {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgba(0,0,0,0.8);
-        padding: 200px 0;
-        position: relative;
-        overflow: hidden;
-        min-height: 100vh;
+
+    /* Footer */
+    .social-icons {
+        height: 40px; /* Smaller height */
     }
-    
-    .e-bg {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
+
+    .social-icons ion-icon {
+        font-size: 24px; /* Smaller icons */
+        margin: 0 15px; /* Reduced spacing */
     }
-    
-    .extras-i {
-        text-align: center;
-        padding: 100px 0;
+
+    .scroll-to-top {
+        bottom: 15px; /* Closer to bottom */
+        right: 15px; /* Closer to right */
+        padding: 8px 12px; /* Reduced padding */
+        font-size: 0.9rem; /* Smaller text */
     }
-    
-    
-    .extras-i h4 {
-        text-align: center;
-        color: bisque;
-        text-align: center;
-        padding: 20px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        font-size: 18px;
-        letter-spacing: 0.09cm;
+}
+
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 1rem; /* Even smaller text */
+        padding: 0 0.5rem; /* Minimal padding */
     }
-    
-    .bonuses-b {
-        text-align: center;
-        align-items: center;
-        font-size: 18px;
-        background-color: rgba(255, 228, 196, 0.8);
-        color: rgb(0, 0, 0);
-        box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+
+    .introduction p {
+        font-size: 0.8rem; /* Smaller text */
     }
-    
-    .bonuses-bg {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgba(0,0,0,0.8);
-        padding: 100px 0;
-        position: relative;
-        overflow: hidden;
-        min-height: 100vh;
+
+    .nav-list a {
+        font-size: 0.8rem; /* Even smaller text */
     }
-    
-    .b-bg {
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
+
+    .nav-list li {
+        margin: 5px 8px; /* Further reduced spacing */
     }
-    
-    .bonuses-i {
-        text-align: center;
-        padding: 100px 0;
+
+    .content-section .section-title {
+        font-size: 0.9rem; /* Smaller text */
+        letter-spacing: 1px; /* Minimal spacing */
     }
-    
-    .bonuses-i h4 {
-        text-align: center;
-        color: bisque;
-        text-align: center;
-        padding: 10px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        font-size: 25px;
+
+    .participants-table .sortable-table,
+    .drivers-table table,
+    .total-count table {
+        font-size: 0.7rem; /* Smallest text */
     }
-    
-    .bonuses-i p {
-        text-align: center;
-        color: #ffe4c4;
-        text-align: center;
-        padding: 10px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
-        font-size: 18px
-    
+
+    .map-embed iframe {
+        height: 250px; /* Smallest height for phones */
     }
-    
-    .icons {
-        text-align: center;
-        align-items: center;
-        letter-spacing: 1.5cm;
-        font-size: 25px;
-        background-image: linear-gradient(to right, burlywood, black);
-        box-shadow: 4px 7px 15px rgba(255, 228, 196, 1);
+
+    .support-list li,
+    .rewards-list li,
+    #equipment .misc-list li {
+        font-size: 0.85rem; /* Slightly smaller text */
     }
-    
-    .map {
-        text-align: center;
-        color: bisque;
-        text-align: center;
-        padding: 20px 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        border-collapse: collapse;
+
+    .rules-list li {
+        font-size: 0.75rem; /* Smallest text */
     }
 }
