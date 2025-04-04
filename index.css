@@ -37,38 +37,101 @@ a:active {
 /* Navigation + Header */
 .site-header .main-navigation {
     position: fixed; /* Fixes navigation to top */
-    top: 0; /* Aligns to top of viewport */
-    left: 0; /* Aligns to left of viewport */
-    width: 100vw; /* Full viewport width */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px; /* Default header height */
     background: rgba(168, 111, 2, 0.9); /* Deep gold with transparency */
-    padding: 15px 0; /* Vertical padding */
-    z-index: 1000; /* Ensures nav stays above other content */
+    padding: 0 20px; /* Remove vertical padding */
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Spread logo and nav */
+    z-index: 1000;
+    transition: all 0.3s ease; /* Smooth transition for all changes */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
+/* Scrolled state for the header */
+.main-navigation.scrolled {
+    top: 10px; /* Add space from the top when scrolled */
+    width: calc(100vw - 40px); /* Slightly smaller width */
+    margin: 0 20px; /* Center it with margin */
+    height: 50px; /* Smaller height when scrolled */
+    border-radius: 25px; /* Rounded corners */
+    background: rgba(168, 111, 2, 1); /* Slightly more opaque when scrolled */
+}
+
+/* Logo Styling */
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo {
+    height: 80px; /* Default logo size */
+    width: auto;
+    cursor: pointer;
+    transition: height 0.3s ease; /* Smooth transition for logo size */
+}
+
+/* Adjust logo size when scrolled */
+.main-navigation.scrolled .site-logo {
+    height: 55px; /* Smaller logo when scrolled */
+}
+
+/* Navigation List */
 .main-navigation .nav-list {
-    display: flex; /* Horizontal layout for nav items */
-    justify-content: center; /* Centers nav items */
-    list-style: none; /* Removes default list bullets */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; /* Helps center the menu */
 }
 
 .nav-list li {
-    margin: 0 20px; /* Horizontal spacing between nav items */
+    margin: 0 15px; /* Adjust spacing */
 }
 
 .nav-list a {
-    font-size: 1.1rem; /* Slightly larger font for nav links */
-    color: #d6a90d; /* Bright gold link color */
-    transition: color 0.3s; /* Smooth color transition on hover */
+    font-size: 1rem; /* Reduce font size slightly */
+    color: #d6a90d;
+    transition: color 0.3s;
+    text-decoration: none;
 }
 
-.nav-list li:hover {
-    transform: scale(1.1); /* Slight scale up on hover */
+/* Header Button Styling (Like 'Book Now' and 'Shop Now') */
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
 }
 
-.nav-list a:hover {
-    color: #f2f2f2; /* Light gray on hover */
+.header-buttons .btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Book Now Button */
+.book-now {
+    background: #d6a90d;
+    color: black;
+    border: none;
+}
+
+/* Shop Now Button */
+.shop-now {
+    background: transparent;
+    color: #d6a90d;
+    border: 2px solid #d6a90d;
+}
+
+/* Prevent content from being hidden under fixed header */
+body {
+    padding-top: 60px;
 }
 
 /* Hero Section */
@@ -193,8 +256,8 @@ a:active {
 }
 
 .map-embed iframe {
-    width: 100%; /* Full width */
-    height: 500px; /* Default height */
+    width: 1300px; /* Full width */
+    height: 800px; /* Default height */
     border: none; /* Removes border */
 }
 
@@ -414,7 +477,7 @@ a:active {
 }
 
 .rules-list span {
-    color: #8c5a00; /* Burnt gold for emphasis */
+    color: rgb(255, 80, 80); /* Burnt gold for emphasis */
     font-weight: 600; /* Bold text */
     transition: color 0.3s ease; /* Smooth color transition */
 }
@@ -758,16 +821,6 @@ a:active {
         min-height: auto; /* No minimum height */
     }
 
-    /* Map Section */
-    #route-map .map-embed {
-        padding: 30px 0; /* Reduced padding */
-    }
-
-    .map-embed iframe {
-        width: 100%; /* Full width */
-        height: 300px; /* Smaller height for mobile */
-    }
-
     /* Participants Section */
     #participants .participants-table {
         padding: 30px 0; /* Reduced padding */
@@ -948,8 +1001,14 @@ a:active {
         font-size: 0.7rem; /* Smallest text */
     }
 
+    /* Map Section */
+    #route-map .map-embed {
+        padding: 30px 0; /* Reduced padding */
+    }
+
     .map-embed iframe {
-        height: 250px; /* Smallest height for phones */
+        width: 400px; /* Full width */
+        height: 400px; /* Smaller height for mobile */
     }
 
     .support-list li,
