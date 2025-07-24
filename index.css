@@ -8,7 +8,8 @@
 
 /* Base Body Style */
 body {
-    background-color: #a86f02; /* Sets deep gold background */
+    background: linear-gradient(135deg, rgb(0, 0, 0), rgb(0, 0, 0)); /* Subtle gold gradient */
+    -webkit-backdrop-filter: blur(5px); /* Safari support */
     font-size: 16px; /* Base font size for readability */
     line-height: 1.6; /* Comfortable line spacing */
     color: #f2f2f2; /* Light gray text color */
@@ -20,18 +21,19 @@ body {
 
 /* Link styles */
 a {
-    color: #d6a90d; /* Bright gold link color */
+    color: #a0d0ff; /* Light blue for links */
     text-decoration: none; /* Removes underline from links */
     transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 a:visited {
-    color: #d6a90d; /* Maintains bright gold for visited links */
+    color:  #a0d0ff; /* Same light blue for visited */
 }
 a:hover {
     text-decoration: underline; /* Adds underline on hover */
+    color: #d4aaff; /* Pastel purple on hover */
 }
 a:active {
-    color: #8c5a00; /* Burnt gold when link is clicked */
+    color: #508cff; /* Deeper blue when clicked */
 }
 
 /* Navigation + Header */
@@ -41,7 +43,10 @@ a:active {
     left: 0;
     width: 100vw;
     height: 60px; /* Default header height */
-    background: rgba(168, 111, 2, 0.9); /* Deep gold with transparency */
+    background: linear-gradient(135deg, rgba(80, 140, 255, 0.3), rgba(150, 200, 255, 0.2)); /* Blue gradient */
+    backdrop-filter: blur(12px); /* Frosted glass blur */
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    box-shadow: 0 4px 20px rgba(80, 140, 255, 0.4);
     padding: 0 20px; /* Remove vertical padding */
     display: flex;
     align-items: center; /* Align items vertically */
@@ -58,7 +63,10 @@ a:active {
     margin: 0 20px; /* Center it with margin */
     height: 50px; /* Smaller height when scrolled */
     border-radius: 25px; /* Rounded corners */
-    background: rgba(168, 111, 2, 1); /* Slightly more opaque when scrolled */
+    background: linear-gradient(135deg, rgba(80, 140, 255, 0.3), rgba(150, 200, 255, 0.2));
+    backdrop-filter: blur(12px); /* Stronger blur when scrolled */
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(80, 140, 255, 0.4);
 }
 
 /* Logo Styling */
@@ -95,9 +103,13 @@ a:active {
 
 .nav-list a {
     font-size: 1rem; /* Reduce font size slightly */
-    color: #d6a90d;
+    color: #a0d0ff; /* Light blue */
     transition: color 0.3s;
     text-decoration: none;
+}
+
+.nav-list a:hover {
+    color: #d4aaff; /* Pastel purple */
 }
 
 /* Header Button Styling (Like 'Book Now' and 'Shop Now') */
@@ -113,20 +125,24 @@ a:active {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    background: linear-gradient(135deg, rgba(80, 140, 255, 0.4), rgba(150, 200, 255, 0.3));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #e6f1ff; /* Off-white text */
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Book Now Button */
 .book-now {
-    background: #d6a90d;
-    color: black;
-    border: none;
+    color: #e6f1ff;
 }
 
 /* Shop Now Button */
 .shop-now {
     background: transparent;
-    color: #d6a90d;
-    border: 2px solid #d6a90d;
+    color: #a0d0ff;
+    border: 2px solid rgba(80, 140, 255, 0.5);
 }
 
 /* Prevent content from being hidden under fixed header */
@@ -144,7 +160,6 @@ body {
     position: relative; /* For absolute children */
     overflow: hidden; /* Hides overflow */
     min-height: 100vh; /* Full viewport height */
-    color: #f2f2f2; /* Light gray text */
 }
 
 .hero-background-video {
@@ -173,7 +188,7 @@ body {
 }
 
 .hero-title {
-    color: #d6a90d; /* Bright gold color */
+    color: #f2f1d5; /* Creamy gold text */
     font-size: 2.5vw; /* Scales with viewport width */
     letter-spacing: 0.3cm; /* Wide letter spacing */
     padding: 0 2rem; /* Horizontal padding */
@@ -181,7 +196,7 @@ body {
 
 .side-line {
     height: 0.1vw; /* Thin line, scales with viewport */
-    background-color: #f2f2f2; /* Light gray color */
+    background-color: #e6f1ff; /* Off-white */
     opacity: 0.5; /* Semi-transparent */
     flex-grow: 1; /* Expands to fill space */
     max-width: 50%; /* Limits width */
@@ -201,7 +216,7 @@ body {
 }
 
 .introduction p {
-    color: #f2f1d5; /* Creamy gold text */
+    color: #e6f1ff; /* Off-white */
     font-size: 1.1rem; /* Readable size */
     letter-spacing: 0.05cm; /* Slight letter spacing */
     line-height: 1.8; /* Comfortable line spacing */
@@ -212,6 +227,7 @@ body {
     font-size: 1.2rem; /* Slightly larger text */
     font-style: italic; /* Italicized */
     margin-top: 1.5rem; /* Space above */
+    color: #d4aaff; /* Pastel purple */
 }
 
 /* General Section Styles */
@@ -219,9 +235,11 @@ body {
     text-align: center; /* Centers text */
     letter-spacing: 4px; /* Wide letter spacing */
     font-size: 25px; /* Large title */
-    background-color: rgba(242, 241, 213, 0.8); /* Creamy gold background */
-    color: #a86f02; /* Deep gold text */
-    box-shadow: 4px 7px 15px rgba(214, 169, 13, 1); /* Bright gold shadow */
+    background: linear-gradient(135deg, rgba(150, 200, 255, 0.3), rgba(80, 140, 255, 0.2));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #e6f1ff;
+    box-shadow: 4px 7px 15px rgba(80, 140, 255, 0.5);
     padding: 0.5rem; /* Internal spacing */
 }
 
@@ -268,35 +286,39 @@ body {
 }
 
 .participants-table .sortable-table {
-    background-color: rgba(168, 111, 2, 0.412); /* Deep gold with transparency */
+    background: linear-gradient(135deg, rgba(80, 140, 255, 0.3), rgba(150, 200, 255, 0.2));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 3px solid rgba(150, 200, 255, 0.5);
+    box-shadow: 0 0 10px rgba(80, 140, 255, 0.4);
     margin: 0 auto 15px; /* Centers with bottom margin */
     text-align: center; /* Centers text */
     width: 75vh; /* Width based on viewport height */
     height: 55vh; /* Height based on viewport height */
     border-collapse: collapse; /* Removes spacing between cells */
-    border: 3px solid #d6a90d; /* Bright gold border */
-    box-shadow: 0 0 6px #d6a90d; /* Bright gold glow */
 }
 
 .participants-table th, .participants-table td {
-    color: #f2f2f2; /* Light gray text */
-    border: 1px solid; /* Thin border */
+    color: #e6f1ff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .total-count table {
-    background-color: rgba(168, 111, 2, 0.412); /* Deep gold with transparency */
+    background: linear-gradient(135deg, rgba(80, 140, 255, 0.3), rgba(150, 200, 255, 0.2));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 3px solid rgba(150, 200, 255, 0.5);
+    box-shadow: 0 0 10px rgba(80, 140, 255, 0.4);
     margin: 0 auto; /* Centers table */
     text-align: center; /* Centers text */
     width: 75vh; /* Width based on viewport height */
     height: 5vh; /* Short height */
     border-collapse: collapse; /* Removes spacing between cells */
-    border: 3px solid #d6a90d; /* Bright gold border */
-    box-shadow: 0 0 6px #d6a90d; /* Bright gold glow */
 }
 
 .total-count th, .total-count td {
-    color: #f2f2f2; /* Light gray text */
-    border: 1px solid; /* Thin border */
+    color: #e6f1ff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Drivers Section */
@@ -306,19 +328,21 @@ body {
 }
 
 .drivers-table table {
-    background-color: rgba(168, 111, 2, 0.412); /* Deep gold with transparency */
+    background: linear-gradient(135deg, rgba(80, 140, 255, 0.3), rgba(150, 200, 255, 0.2));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 3px solid rgba(150, 200, 255, 0.5);
+    box-shadow: 0 0 10px rgba(80, 140, 255, 0.4);
     margin: 0 auto; /* Centers table */
     text-align: center; /* Centers text */
     width: 75vh; /* Width based on viewport height */
     height: 55vh; /* Height based on viewport height */
     border-collapse: collapse; /* Removes spacing between cells */
-    border: 6px solid #d6a90d; /* Thicker bright gold border */
-    box-shadow: 0 0 16px #d6a90d; /* Larger bright gold glow */
 }
 
 .drivers-table th, .drivers-table td {
-    color: #f2f2f2; /* Light gray text */
-    border: 1px solid; /* Thin border */
+    color: #e6f1ff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Support Crew Section */
@@ -334,7 +358,7 @@ body {
     font-size: 1.2rem; /* Readable size */
     padding: 20px 0; /* Vertical padding */
     letter-spacing: 0.05cm; /* Slight letter spacing */
-    background: linear-gradient(to right, rgba(242, 241, 213, 0.15), rgba(242, 241, 213, 0)); /* Creamy gold gradient */
+    background: linear-gradient(135deg, rgba(150, 200, 255, 0.15), rgba(80, 140, 255, 0));
     border-radius: 8px; /* Rounded corners */
     margin-bottom: 1.5rem; /* Space below */
     border-top: none; /* No top border */
@@ -351,11 +375,13 @@ body {
 }
 
 .support-list li {
-    color: #f2f1d5; /* Creamy gold text */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: #e6f1ff;
     font-size: 1.1rem; /* Readable size */
     padding: 20px 0; /* Vertical padding */
     letter-spacing: 0.05cm; /* Slight letter spacing */
-    border-bottom: 1px solid rgba(242, 241, 213, 0.3); /* Creamy gold separator */
 }
 
 .support-list li:last-child {
@@ -367,14 +393,10 @@ body {
     margin-right: 0.5rem; /* Space to right */
 }
 
-.support-list li a {
-    color: #d6a90d; /* Bright gold link color */
-}
-
 .support-list .role-description {
     display: block; /* Block for new line */
     font-size: 0.9rem; /* Smaller text */
-    color: rgba(242, 241, 213, 0.8); /* Creamy gold with opacity */
+    color: rgb(212, 233, 255);
     margin-top: 0.5rem; /* Space above */
     letter-spacing: 0.03cm; /* Slight letter spacing */
 }
@@ -384,106 +406,81 @@ body {
     font-size: 1.2rem; /* Readable size */
     padding: 20px 0; /* Vertical padding */
     letter-spacing: 0.05cm; /* Slight letter spacing */
-    background: linear-gradient(to right, rgba(242, 241, 213, 0), rgba(242, 241, 213, 0.15)); /* Creamy gold gradient */
+    background: linear-gradient(135deg, rgba(80, 140, 255, 0), rgba(150, 200, 255, 0.15));
     border-radius: 8px; /* Rounded corners */
     margin-bottom: 1.5rem; /* Space below */
     border-top: none; /* No top border */
 }
 
 /* Trip Rules Section */
+/* Rules Section */
 #rules .section-container {
     position: relative; /* For absolute children */
     overflow: hidden; /* Hides overflow */
     padding: 40px 0; /* Vertical padding */
 }
 
-#rules .rules-list {
-    text-align: center; /* Centers text */
-    color: #f2f1d5; /* Creamy gold text */
-    padding: 50px 0; /* Vertical padding */
-    font-size: 1rem; /* Base font size */
-    letter-spacing: 0.05cm; /* Slight letter spacing */
-    list-style: none; /* Removes bullets */
+#rules .support-details {
+    text-align: center; /* Centers content */
     max-width: 70%; /* Limits width */
     margin: 0 auto; /* Centers horizontally */
-    overflow: visible; /* Allows hover effects */
-}
-
-.rules-list li {
-    padding: 8px 0; /* Vertical padding */
-    position: relative; /* For hover effects */
-    transition: transform 0.3s ease, background 0.3s ease; /* Smooth transitions */
-    background: linear-gradient(to right, rgba(242, 241, 213, 0.05), rgba(242, 241, 213, 0.05)); /* Subtle gradient */
-    border-radius: 8px; /* Rounded corners */
-    margin: 6px 0; /* Vertical spacing */
-    font-size: 0.9rem; /* Slightly smaller text */
-}
-
-.rules-list li:hover {
-    transform: translateX(10px); /* Shifts right on hover */
-    background: linear-gradient(to right, rgba(242, 241, 213, 0.15), rgba(242, 241, 213, 0)); /* Stronger gradient */
+    border: none; /* No border */
 }
 
 .rules-overview {
     color: #f2f1d5; /* Creamy gold text */
-    font-size: 1.3rem; /* Larger text */
-    padding: 30px 0; /* Vertical padding */
-    letter-spacing: 0.06cm; /* Wider letter spacing */
-    font-weight: 600; /* Bold text */
-    text-transform: uppercase; /* All caps */
-    position: relative; /* For pseudo-element */
-    max-width: 70%; /* Limits width */
-    margin: 0 auto 40px; /* Centers with bottom margin */
-    background: linear-gradient(to right, rgba(242, 241, 213, 0.15), rgba(242, 241, 213, 0)); /* Creamy gold gradient */
+    font-size: 1.2rem; /* Readable size */
+    padding: 20px 0; /* Vertical padding */
+    letter-spacing: 0.05cm; /* Slight letter spacing */
+    background: linear-gradient(135deg, rgba(150, 200, 255, 0.15), rgba(80, 140, 255, 0));
     border-radius: 8px; /* Rounded corners */
+    margin-bottom: 1.5rem; /* Space below */
+    border-top: none; /* No top border */
     animation: fadeIn 1s ease-in-out; /* Fade in animation */
 }
 
-.rules-overview::after {
-    content: ''; /* Empty content */
-    position: absolute; /* Positions below text */
-    width: 100px; /* Fixed width */
-    height: 3px; /* Thin line */
-    bottom: -15px; /* Below text */
-    left: 50%; /* Centers horizontally */
-    transform: translateX(-50%); /* Exact centering */
-    border-radius: 2px; /* Slightly rounded */
+.rules-list {
+    list-style: none; /* Removes bullets */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
+
+.rules-list li {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: #e6f1ff; /* Light blue text */
+    font-size: 1.1rem; /* Readable size */
+    padding: 20px 0; /* Vertical padding */
+    letter-spacing: 0.05cm; /* Slight letter spacing */
+}
+
+.rules-list li:last-child {
+    border-bottom: none; /* No border on last item */
+}
+
+.rules-list li strong {
+    display: inline-block; /* Inline block for spacing */
+    margin-right: 0.5rem; /* Space to right */
+}
+
+.rules-list .role-description {
+    display: block; /* Block for new line */
+    font-size: 0.9rem; /* Smaller text */
+    color: rgb(212, 233, 255);
+    margin-top: 0.5rem; /* Space above */
+    letter-spacing: 0.03cm; /* Slight letter spacing */
 }
 
 .rules-summary {
     color: #f2f1d5; /* Creamy gold text */
     font-size: 1.2rem; /* Readable size */
-    padding: 30px 20px; /* Vertical and horizontal padding */
+    padding: 20px 0; /* Vertical padding */
     letter-spacing: 0.05cm; /* Slight letter spacing */
-    font-style: italic; /* Italicized */
-    font-weight: 500; /* Medium bold */
-    max-width: 70%; /* Limits width */
-    margin: 40px auto 0; /* Centers with top margin */
-    position: relative; /* For pseudo-element */
-    background: linear-gradient(to right, rgba(242, 241, 213, 0), rgba(242, 241, 213, 0.15)); /* Creamy gold gradient */
+    background: linear-gradient(135deg, rgba(80, 140, 255, 0), rgba(150, 200, 255, 0.15));
     border-radius: 8px; /* Rounded corners */
-    animation: fadeInUp 1s ease-in-out; /* Fade in with slide */
-}
-
-.rules-summary::before {
-    content: ''; /* Empty content */
-    position: absolute; /* Full coverage */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    z-index: -1; /* Behind text */
-    top: 0; /* Aligns to top */
-    left: 0; /* Aligns to left */
-    border-radius: 8px; /* Matches container */
-}
-
-.rules-list span {
-    color: rgb(255, 80, 80); /* Burnt gold for emphasis */
-    font-weight: 600; /* Bold text */
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-.rules-list span:hover {
-    color: #a86f02; /* Deep gold on hover */
+    margin-bottom: 1.5rem; /* Space below */
+    border-top: none; /* No top border */
 }
 
 /* Keyframe animations */
@@ -545,11 +542,13 @@ body {
 }
 
 .collapsible-btn {
-    background: rgba(242, 241, 213, 0.1); /* Creamy gold with transparency */
-    backdrop-filter: blur(10px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
-    border: 1px solid rgba(242, 241, 213, 0.3); /* Creamy gold border */
-    color: #f2f1d5; /* Creamy gold text */
+    background: linear-gradient(135deg, rgba(150, 200, 255, 0.3), rgba(80, 140, 255, 0.2));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #e6f1ff;
+    box-shadow: 0 4px 15px rgba(80, 140, 255, 0.3);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     font-size: 25px; /* Large text */
     padding: 10px 20px; /* Internal spacing */
     cursor: pointer; /* Hand cursor */
@@ -558,13 +557,12 @@ body {
     text-align: center; /* Centers text */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 15px rgba(168, 111, 2, 0.2); /* Deep gold shadow */
-    text-shadow: 0 0 1.8px #f2f2f2; /* Light gray shadow */
-    transition: background 0.3s ease, transform 0.2s ease; /* Smooth transitions */
 }
 
 .collapsible-btn:hover {
-    background: rgba(242, 241, 213, 0.2); /* Stronger background on hover */
-    transform: scale(1.05); /* Slight scale up */
+    background: linear-gradient(135deg, rgba(150, 200, 255, 0.5), rgba(80, 140, 255, 0.4));
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 6px 20px rgba(80, 140, 255, 0.5);
 }
 
 .collapsible-content {
@@ -582,67 +580,75 @@ body {
 }
 
 /* Equipment Section */
-#equipment .misc-list {
+#equipment .section-container {
+    position: relative; /* For absolute children */
+    overflow: hidden; /* Hides overflow */
+    padding: 40px 0; /* Vertical padding */
+}
+
+#equipment .support-details {
+    text-align: center; /* Centers content */
+    max-width: 70%; /* Limits width */
+    margin: 0 auto; /* Centers horizontally */
+    border: none; /* No border */
+}
+
+.equipment-overview {
+    color: #f2f1d5; /* Creamy gold text */
+    font-size: 1.2rem; /* Readable size */
+    padding: 20px 0; /* Vertical padding */
+    letter-spacing: 0.05cm; /* Slight letter spacing */
+    background: linear-gradient(135deg, rgba(150, 200, 255, 0.15), rgba(80, 140, 255, 0));
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 1.5rem; /* Space below */
+    border-top: none; /* No top border */
+    animation: fadeIn 1s ease-in-out; /* Fade in animation */
+}
+
+.equipment-list {
     list-style: none; /* Removes bullets */
     padding: 0; /* No padding */
     margin: 0; /* No margin */
 }
 
-#equipment .misc-list li {
-    color: #f2f1d5; /* Creamy gold text */
+.equipment-list li {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: #e6f1ff; /* Light blue text */
     font-size: 1.1rem; /* Readable size */
     padding: 20px 0; /* Vertical padding */
-    border-bottom: 1px solid rgba(242, 241, 213, 0.3); /* Creamy gold separator */
+    letter-spacing: 0.05cm; /* Slight letter spacing */
 }
 
-#equipment .misc-list li:last-child {
+.equipment-list li:last-child {
     border-bottom: none; /* No border on last item */
 }
 
-#equipment .misc-list li strong {
+.equipment-list li strong {
     display: inline-block; /* Inline block for spacing */
     margin-right: 0.5rem; /* Space to right */
 }
 
-#equipment .misc-list a {
-    color: #d6a90d; /* Bright gold link color */
-    text-decoration: none; /* No underline */
-    transition: color 0.3s ease-in-out; /* Smooth color transition */
-}
-
-#equipment .misc-list .misc-description {
+.equipment-list .role-description {
     display: block; /* Block for new line */
     font-size: 0.9rem; /* Smaller text */
-    color: rgba(242, 241, 213, 0.8); /* Creamy gold with opacity */
+    color: rgb(212, 233, 255);
     margin-top: 0.5rem; /* Space above */
     letter-spacing: 0.03cm; /* Slight letter spacing */
 }
 
-#equipment .misc-summary {
+.equipment-summary {
     color: #f2f1d5; /* Creamy gold text */
     font-size: 1.2rem; /* Readable size */
     padding: 20px 0; /* Vertical padding */
     letter-spacing: 0.05cm; /* Slight letter spacing */
-    background: linear-gradient(to right, rgba(242, 241, 213, 0), rgba(242, 241, 213, 0.15)); /* Creamy gold gradient */
+    background: linear-gradient(135deg, rgba(80, 140, 255, 0), rgba(150, 200, 255, 0.15));
     border-radius: 8px; /* Rounded corners */
     margin-bottom: 1.5rem; /* Space below */
     border-top: none; /* No top border */
 }
 
-#equipment a {
-    color: #d6a90d; /* Bright gold link color */
-    text-decoration: none; /* No underline */
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-#equipment a:visited {
-    color: #d6a90d; /* Bright gold for visited links */
-}
-#equipment a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-#equipment a:active {
-    color: #8c5a00; /* Burnt gold when clicked */
-}
 
 /* Special Rewards Section */
 #bonuses .rewards-details {
@@ -658,7 +664,7 @@ body {
     font-size: 1.2rem; /* Readable size */
     padding: 20px 0; /* Vertical padding */
     letter-spacing: 0.05cm; /* Slight letter spacing */
-    background: linear-gradient(to right, rgba(242, 241, 213, 0.15), rgba(242, 241, 213, 0)); /* Creamy gold gradient */
+    background: linear-gradient(135deg, rgba(150, 200, 255, 0.15), rgba(80, 140, 255, 0));
     border-radius: 8px; /* Rounded corners */
     margin-bottom: 1.5rem; /* Space below */
     border-top: none; /* No top border */
@@ -671,11 +677,13 @@ body {
 }
 
 .rewards-list li {
-    color: #f2f1d5; /* Creamy gold text */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #e6f1ff;
     font-size: 1.1rem; /* Readable size */
     padding: 20px 0; /* Vertical padding */
     letter-spacing: 0.05cm; /* Slight letter spacing */
-    border-bottom: 1px solid rgba(242, 241, 213, 0.3); /* Creamy gold separator */
 }
 
 .rewards-list li:last-child {
@@ -687,10 +695,6 @@ body {
     margin-right: 0.5rem; /* Space to right */
 }
 
-.rewards-list li a {
-    color: #d6a90d; /* Bright gold link color */
-}
-
 /* Footer */
 .site-footer {
     position: absolute; /* Positions at bottom */
@@ -698,7 +702,10 @@ body {
 }
 
 .social-icons {
-    background: linear-gradient(to right, #d6a90d, #a86f02); /* Gold gradient */
+    background: linear-gradient(135deg, rgba(80, 140, 255, 0.4), rgba(150, 200, 255, 0.3));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(80, 140, 255, 0.3);
     padding: 5px; /* Internal spacing */
     display: flex; /* Flex layout */
     justify-content: center; /* Centers icons */
@@ -712,32 +719,36 @@ body {
     font-size: 30px; /* Icon size */
     padding: 10px; /* Internal spacing */
     margin: 0 20px; /* Horizontal spacing */
-    color: #f2f2f2; /* Light gray color */
+    color: #a0d0ff; /* Light blue for links */
     transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .social-icons ion-icon:hover {
-    color: #f2f1d5; /* Creamy gold on hover */
+    color: #d4aaff; /* Pastel purple on hover */
 }
 
 /* Scroll to Top Button */
 .scroll-to-top {
+    background: linear-gradient(135deg, rgba(80, 140, 255, 0.5), rgba(150, 200, 255, 0.3));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(80, 140, 255, 0.3);
+    color: #e6f1ff;
+    transition: transform 0.3s ease, background 0.3s ease;
     position: fixed; /* Fixed position */
     bottom: 20px; /* Distance from bottom */
     right: 20px; /* Distance from right */
-    background: #d6a90d; /* Bright gold background */
-    color: #a86f02; /* Deep gold text */
     border: none; /* No border */
     padding: 10px 15px; /* Internal spacing */
     border-radius: 50%; /* Circular shape */
     cursor: pointer; /* Hand cursor */
     font-size: 1rem; /* Readable size */
     z-index: 10; /* Above most content */
-    box-shadow: 2px 2px 5px rgba(168, 111, 2, 0.3); /* Deep gold shadow */
 }
 
 .scroll-to-top:hover {
-    background: #8c5a00; /* Burnt gold on hover */
+    background: linear-gradient(135deg, rgba(80, 140, 255, 0.7), rgba(150, 200, 255, 0.5));
+    transform: scale(1.1);
 }
 
 /* Mobile-specific adjustments */
@@ -760,7 +771,6 @@ body {
 
     .nav-list a {
         font-size: 0.9rem; /* Smaller font for mobile */
-        color: #f2f1d5;
     }
 
     /* Hero Section */
@@ -813,7 +823,6 @@ body {
         font-size: 1rem; /* Smaller text */
         letter-spacing: 2px; /* Reduced spacing */
         padding: 0.5rem; /* Consistent padding */
-        box-shadow: 2px 4px 10px rgba(214, 169, 13, 1); /* Smaller shadow */
     }
 
     .section-container {
@@ -942,6 +951,7 @@ body {
     #bonuses .rewards-details {
         max-width: 90%; /* Wider for mobile */
         padding: 30px 0; /* Reduced padding */
+
     }
 
     .rewards-subtitle {
