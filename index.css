@@ -556,7 +556,6 @@ body {
     max-width: 300px; /* Limits width */
     text-align: center; /* Centers text */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 15px rgba(168, 111, 2, 0.2); /* Deep gold shadow */
 }
 
 .collapsible-btn:hover {
